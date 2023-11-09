@@ -17,7 +17,9 @@ git clone https://github.com/QiuChenlyOpenSource/InjectLib.git && cd ./InjectLib
 chmod +x surge.sh && sudo bash surge.sh
 ```
 
-> 已知问题：与 iCloud 相关均不可用.不可更新.
+> 已知问题：与 iCloud 相关均不可用.例如: 在线安装模块,Ponte等.
+
+关于平台间模块同步(不用iCloud方案): https://lanyundev.com/posts/c0448cdf
 
 若不想执行代码，只想用成品:
 
