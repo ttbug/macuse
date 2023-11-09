@@ -81,7 +81,7 @@ if [[ $flag == y ]]; then
       echo "❌ 下载失败,尝试采用仓库链接🔗"
       download_link="https://github.com/LanYunDev/InjectLib_bak/releases/download/surge/Surge-5.4.1-2475-4d9e12213c92f411a549d3e113ebfd18.zip"
       version=$(echo "${download_link}" | awk -F '-' '{print $2 "-" $3}')
-      curl -k -JLO -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" -o "/tmp/Surge-${version}.zip" "${download_link}" || (echo "Surge-${version}安装失败☹️,网络原因,请检查网络." && exit 1)
+      curl -k -L -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" -o "/tmp/Surge-${version}.zip" "${download_link}" || (echo "Surge-${version}安装失败☹️,网络原因,请检查网络." && exit 1)
     fi
     unzip -qq -o "/tmp/Surge-${version}.zip" -d "/Applications" || (echo "解压失败☹️,压缩包可能已损坏.请重新下载." && exit 1)
   fi
