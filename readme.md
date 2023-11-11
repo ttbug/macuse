@@ -5,11 +5,12 @@
 <!-- TOC -->
 
 * [聯絡](#聯絡)
-    * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
+  * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
 * [使用](#使用)
 * [问题](#问题)
 * [环境](#环境)
-* [支持](#支持)
+* [MacApp支持](#macapp支持)
+* [iOS App支持](#ios-app支持)
 * [激活注意](#激活注意)
     * [Emby Server 破解](#emby-server-破解)
     * [Sublime Text Dev](#sublime-text-dev)
@@ -109,7 +110,7 @@ https://twitter.com/QiuChenly
 - 检查二进制文件的最低macOS版本兼容性
     - ```find . -name "*.*" | xargs otool -l | grep -E "(minos|sdk)"```
 
-# 支持
+# MacApp支持
 
 新增的SIP栏说明:<br>
 
@@ -172,6 +173,15 @@ https://twitter.com/QiuChenly
 ![Adobe屏蔽](./imgs/image-9.png)
 
 另请参见: [Adobe激活产品说明](./Adobe说明.md)
+
+# iOS App支持
+
+| App   | 版本     | 特殊说明                                             |
+|-------|--------|--------------------------------------------------|
+| Surge | v5.8.0 | 战损iPhone 7坏了去修了，修好之后学习怎么破解iOS 学iOS破解第一天 -200 RMB |
+|       |        |                                                  |
+|       |        |                                                  |
+|       |        |                                                  |
 
 # 激活注意
 
