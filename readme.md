@@ -1,72 +1,48 @@
-<p align="center" style="font-size: 21px">QiuChenly InjectShell</p>
-<p align="center">Creative & Design</p>
-<p align="center">2023@MacBook Pro</p>
-
-
-# 概览
+<p align="center" style="font-size: 21px">macOS 代码注入</p>
+<p align="center">秋城落叶<br/>Creative & Design</p>
+<p align="center">For My Mac</p>
 
 <!-- TOC -->
 
-- [概览](#概览)
-- [我的Twitter](#我的twitter)
-  - [我的Tg频道](#我的tg频道)
-  - [我的Tg群组](#我的tg群组)
-- [先TM点Star！别几把点Fork了！](#先tm点star别几把点fork了)
-- [免责声明](#免责声明)
-    - [让你们看看原神的力量 去吧 芭芭拉](#让你们看看原神的力量-去吧-芭芭拉)
-- [使用](#使用)
-- [问题](#问题)
-- [环境](#环境)
-- [兼容](#兼容)
-- [激活注意](#激活注意)
-  - [Emby Server 破解](#emby-server-破解)
-  - [Sublime Text Dev](#sublime-text-dev)
-  - [PD 19](#pd-19)
-  - [Stash](#stash)
-  - [ELPass](#elpass)
-  - [Surge](#surge)
-  - [拦截激活部分App](#拦截激活部分app)
-- [提示](#提示)
-- [警告](#警告)
-- [目的](#目的)
-- [群组交流](#群组交流)
-- [~~停更~~](#停更)
+* [聯絡](#聯絡)
+  * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
+* [使用](#使用)
+* [问题](#问题)
+* [环境](#环境)
+* [支持](#支持)
+* [激活注意](#激活注意)
+    * [Emby Server 破解](#emby-server-破解)
+    * [Sublime Text Dev](#sublime-text-dev)
+    * [PD 19](#pd-19)
+    * [Surge](#surge)
+        * [利用Surge的MitM拦截並激活部分App](#利用surge的mitm拦截並激活部分app)
+* [提示](#提示)
+* [警告](#警告)
+* [目的](#目的)
+* [群组交流](#群组交流)
+* [~~免责声明~~wo ze ni ma de b](#免责声明wo-ze-ni-ma-de-b)
+* [~~停更~~](#停更)
 
 <!-- TOC -->
 
-# 我的Twitter
+# 聯絡
 
-关注我的Twitter(X) 平台OK？关注落叶喵，关注QiuChenly谢谢喵
-
-[QiuChenly](https://twitter.com/QiuChenly)
-
-## 我的Tg频道 
-
-关注落叶频道喵 关注落叶频道谢谢喵
-
-https://t.me/qiuchenlymac
-
-
-## 我的Tg群组
-挑战互联网米线下限
+關注我的Telegram頻道和群組,分享最新資訊和技術。
+<br>
+頻道: https://t.me/qiuchenlymac
 
 别让欲望击穿你の意志
+<br>
+群組: https://t.me/+f3BWmkjVCzQwYzM1 <br>
+<br>
+關注我的Twitter:
+https://twitter.com/QiuChenly
+<br>
+關注QiuChenly喵，關注落葉的Twitter喵。謝謝大家喵。
 
-https://t.me/+f3BWmkjVCzQwYzM1
+點點關注不迷路！
 
-# 先TM点Star！别几把点Fork了！
-先TM点Star！别光几把点你那b fork按钮了 老子不更新你光fork项目有几把用？留着当互联网活化石？
-
-# 免责声明
-
-致来自中国大陆的各位学习研究爱好者:<br>
-   根据大陆中华人民共和国《计算机软件保护条例》第十七条规定：“为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。”您需知晓本仓库所有内容资源均来源于网络，仅供用户交流学习与研究使用，版权归属原版权方所有，版权争议与本仓库本作者无关，用户本人下载后不能用作商业或非法用途，需在24小时之内删除，否则后果均由用户承担责任。如果你不删,请发邮件到qiuchenly@outlook.com, 我做个登记, 然后让这些喜欢发律师函的事务所一对一指导你。
-
-我是来自北美的独立IOS应用开发者, 是二次元南桐. 从早稻田毕业的那一天, 我的青春也永远留在了京都.
-
-对了,下次发律师函的时候记得发往我住的地方: 华盛顿特区第35大道林肯大街15号-501, John Albet收.
-
-### 让你们看看原神的力量 去吧 芭芭拉
+#### 這就是原神的力量!點擊圖片進入新世界
 
 [![启动](https://i2.hdslb.com/bfs/archive/966fe6fe2c1329919bb8972d69fb8c09d17047cc.jpg@100w_100h_1c.png)](https://ipfs.lanyundev.com/ipfs/bafybeigpm6ocaba2wlgi7zgio3lu7hzqxgrviiicuwc5xbddlo77leabcy/6e51fccaeb5343bda366d42e68c3c705.MP4)
 
@@ -77,26 +53,23 @@ https://t.me/+f3BWmkjVCzQwYzM1
    小白不知道点哪里下载整个仓库？[点我下载](https://github.com/QiuChenlyOpenSource/InjectLib/archive/refs/heads/main.zip)
 2. 要是你不差这几分钟时间，从头到尾先认真读一遍这个readme，可能你看完之后会解决你的部分疑惑。
 
-纯小白另可参见:[小白参考](https://github.com/wolffya/InjectLib/tree/secondary)
-
 # 问题
 
 这里列举一下可能会遇到的问题。
 
 1. 遇到"xxx想要访问你的机密信息"<br>
-   ![img.png](img.png)<br>
+   ![img.png](keyrings.png)<br>
    原因:<br>
    补丁对某些App会自动签名以保证能在SIP打开的情况下使用.但是保存在钥匙串里的信息只能被官方签名的app读取
    自己签名App后会造成丢失权限<br><br>
    解决方案:<br>
-   去钥匙串删除这个App用到的几个“机密信息”,说实话就你那破b电脑上能有什么机密信息啊？都用云上贵州了你的那点b信息谁不知道啊？
+   輸入你的密碼，並點擊始終允許即可。
 
 2. 我不会用终端<br>
    解决方案:<br>
-   没脑子？不会百度？动手破解软件不会可以理解，用别人写好的脚本一键破解也不会？21世纪怎么还会有这么废物的人啊？
+   使用我提供的"原神_启动.command"来进行注入。软件界面简单,只需要按提示操作即可完成注入工作,无需手動打開終端。
 
 3. 需要移到垃圾篓
-   
    应该是App没有打开过就直接执行注入了。这可能会导致检查不通过，不过影响不是很大。建议App在注入前先运行一次。
 
    ![移到垃圾桶](image-3.png)
@@ -117,12 +90,12 @@ https://t.me/+f3BWmkjVCzQwYzM1
    这是很多人会遇到的问题。<br>Operation not permitted就是终端app需要修改app，但是没权限 所以会崩溃。<br>
    原因：终端没有给操作权限<br>
    解决办法：<br>
-   1. 打开设置<br>
-   2. 隐私和安全性<br>
-   3. 开发者工具 和 App管理<br>
-   4. 两个地方都要打开终端开关，重启终端即可正常执行。<br>
-   ![terminal](image-6.png)<br>
-   ![还有这个](image-8.png)
+    1. 打开设置<br>
+    2. 隐私和安全性<br>
+    3. 开发者工具 和 App管理<br>
+    4. 两个地方都要打开终端开关，重启终端即可正常执行。<br>
+       ![terminal](image-6.png)<br>
+       ![还有这个](image-8.png)
 
 # 环境
 
@@ -132,64 +105,64 @@ https://t.me/+f3BWmkjVCzQwYzM1
 - 编译SDK macOS 14.0
 - 目标部署平台 macOS 10.13
 - CMakeLists 环境变量
-  - set(CMAKE_OSX_DEPLOYMENT_TARGET "10.13")
+    - set(CMAKE_OSX_DEPLOYMENT_TARGET "10.13")
 - 检查二进制文件的最低macOS版本兼容性
-  - ```find . -name "*.*" | xargs otool -l | grep -E "(minos|sdk)"```
+    - ```find . -name "*.*" | xargs otool -l | grep -E "(minos|sdk)"```
 
-# 兼容
+# 支持
 
 新增的SIP栏说明:<br>
 
-- ❌: 只能关闭SIP使用<br>
-- ✅: 可以在打开SIP的机器上使用<br>
+- ❌: 表示只能关闭SIP使用<br>
+- ✅: 表示可以在打开SIP的机器上使用<br>
 
-| App                                            | 版本                                                                                        | ARM64 | Intel | SIP | 特殊要求                                                                                                                                                                            |
-|:-----------------------------------------------|:------------------------------------------------------------------------------------------|:-----:|:-----:|-----|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| iShot                                          | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 交个朋友 不杀了 大家支持正版吧 又不贵                                                                                                                                                            | 
-| Infuse Pro                                     | 通杀                                                                                        |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
-| MWEB Pro                                       | 通杀                                                                                        |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
-| 解优2                                            | 通杀                                                                                        |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
-| Omi录屏专家                                        | 通杀                                                                                        |   ✅   |   ✅   | ❌   | 需要从Mac AppStore 下载                                                                                                                                                              | 
-| OmniPlayer                                     | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
-| Navicat Premium                                | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
-| Navicat 16 ForOracle                           | 通杀                                                                                        |   ❌   |   ✅   | ✅   | 需要从Mac AppStore 下载 我下不到ARM64的版本                                                                                                                                                 |
-| Sublime Text                                   | [通杀](https://download.sublimetext.com/sublime_text_build_4154_mac.zip)                    |   ✅   |   ✅   | ✅   | 授权信息下面找。                                                                                                                                                                        |
-| Elpass                                         | [通杀](https://elpass.app/macos/Elpass-1.5.6-490.zip)                                       |   ✅   |   ✅   | ✅   | 无法使用云同步 签名后的app通病 无解 搭配Surge脚本可以做到5138年授权                                                                                                                                       |
-| Surge 5                                        | [通杀](https://dl.nssurge.com/mac/v5/Surge-5.4.1-2475-4d9e12213c92f411a549d3e113ebfd18.zip) |   ✅   |   ✅   | ✅   | 年度好戏我愿称之为 《窃听风云8:赛博卧底》                                                                                                                                                          | 
-| CleanMyMac X                                   | 通杀                                                                                        |   ✅   |   ✅   | ✅   | com.macpaw.CleanMyMac4.Menu 单独也要注入 Helper每个版本不一样还是需要单独处理 暂时不弄了 不要下大陆特供版 更新地址: https://s3-us-west-2.amazonaws.com/updateinfo.devmate.com/com.macpaw.CleanMyMac4/beta/updates.xml | 
-| Microsoft Office Word/PowerPoint/Excel/Outlook | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 365订阅版 需要从Mac AppStore 下载                                                                                                                                                       |
-| Stash                                          | [2.3.0](https://mac-release-static.stash.ws/Stash-build-221.zip)                          |   ❌   |   ✅   | ❌   | 无法设置全局代理 不知道哪里有问题 总体体验较差 不如surge                                                                                                                                                |
-| Paste                                          | 4.1.2                                                                                        |   ✅   |   ✅   | ✅   |     全新算法，杀！                                                                                                                                                                            | 
-| App Cleaner & Uninstaller                      | 8.2.2                                                                                     |   ✅   |   ✅   | ✅   | 因为签名会导致提示盗版，有空在再弄。                                                                                                                                                              | 
-| Affinity Photo 2/Designer 2/Publisher 2 全家桶    | 2.1.1                                                                                     |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
-| ProxyMan                                       | [通杀](https://download.proxyman.io/49100/Proxyman_4.10.0.dmg)                            |   ✅   |   ✅   | ✅   | 更新地址: https://proxyman.io/osx/version.xml                                                                                                                                       |
-| BuhoCleaner                                    | [通杀](https://www.drbuho.com/buho-public-files/buhocleaner/buhocleaner197150.dmg)       |   ✅   |   ✅   | ✅   | 更新地址:https://www.drbuho.com/buho-public-files/buhocleaner/appcast.xml                                                                                                           |
-| Macs Fan Control                                    | [通杀](https://crystalidea.com/downloads/macsfancontrol.zip)       |   ✅   |   ✅   | ✅   | |
-| TablePlus                                    | [通杀](https://tableplus.com/release/osx/tableplus_latest)       |   ✅   |   ✅   | ✅   | 老子第一次喷App: 傻逼App 做的跟shit一样 我伪造的授权信息在内存数据结构被篡改成不知道哪来的ObjectC对象引起崩溃 浪费老子时间 真的垃圾App 作者能不能几把优化一下？？ 就这破App 老子弄到凌晨三点 真的狗都不用 而且连个汉化都没有 格局Down Down了 |
-|Transmit 5|5.9.2|✅|✅|✅| 需要从App Store下载
-|DevUtils|[1.17.0](https://devutils.com/archives/DevUtils-1.17.0.dmg)|✅|✅|✅| 功能可用 但是激活状态我懒得改了 作者写的这个App代码质量之烂令人无语 不想多说什么了
-|MP3Tag|[1.8.6 (86)](https://updates.mp3tag.app/Mp3tag-1.8.6.zip)|❌|✅|✅| 序列号随便输入 全部激活
-|Widgetter|[通杀](https://apps.apple.com/cn/app/widgetter-%E5%B0%8F%E5%B7%A5%E5%85%B7-%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8-%E4%B8%BB%E9%A2%98-%E5%B1%8F%E4%BF%9D/id1553223588?mt=12)|✅|✅|✅| MAS下载 激活全部功能
-|Bartender 5|[5.0.36-通杀](https://macbartender.com/B2/updates/5-0-31/Bartender%205.zip)|✅|✅|✅| 更新地址 https://www.macbartender.com/B2/updates/AppcastB5.xml
-|Parallels Desktop|[19.1.0](https://download.parallels.com/desktop/v19/19.1.0-54729/ParallelsDesktop-19.1.0-54729.dmg) |   ✅   |   ✅   | ✅   |  谁会想到会有人以全家除他以外(含亲妈)全部暴毙的代价冒名顶替别人给我发恐吓律师函呢？
-|QCAD-Intel|[3.28.2](https://www.qcad.org/archives/qcad/qcad-3.28.2-trial-macos-10.14-13.dmg)|❌|✅|✅| ARM懒得弄
-|Bandizip 365|7.28|✅|✅|✅|订阅版|
-|Bandizip|7.28|✅|✅|✅|买断版|
+| App                                            | 版本                                                                                                                                                                      | ARM64 | Intel | SIP | 特殊要求                                                                                                                                                                            |
+|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----:|:-----:|-----|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| iShot                                          | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   | 交个朋友 不杀了 大家支持正版吧 又不贵                                                                                                                                                            | 
+| Infuse Pro                                     | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
+| MWEB Pro                                       | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
+| 解优2                                            | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
+| Omi录屏专家                                        | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ❌   | 需要从Mac AppStore 下载                                                                                                                                                              | 
+| OmniPlayer                                     | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
+| Navicat Premium                                | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
+| Navicat 16 ForOracle                           | 通杀                                                                                                                                                                      |   ❌   |   ✅   | ✅   | 需要从Mac AppStore 下载 我下不到ARM64的版本                                                                                                                                                 |
+| Sublime Text                                   | [通杀](https://download.sublimetext.com/sublime_text_build_4154_mac.zip)                                                                                                  |   ✅   |   ✅   | ✅   | 授权信息下面找。                                                                                                                                                                        |
+| Elpass                                         | [通杀](https://elpass.app/macos/Elpass-1.5.6-490.zip)                                                                                                                     |   ✅   |   ✅   | ✅   | 无法使用云同步 签名后的app通病 无解 搭配Surge脚本可以做到5138年授权 https://elpass.app/macos/appcast-beta.xml                                                                                             |
+| Surge 5                                        | [通杀](https://dl.nssurge.com/mac/v5/Surge-5.4.1-2475-4d9e12213c92f411a549d3e113ebfd18.zip)                                                                               |   ✅   |   ✅   | ✅   | 年度好戏我愿称之为 《窃听风云8:赛博卧底》                                                                                                                                                          | 
+| CleanMyMac X                                   | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   | com.macpaw.CleanMyMac4.Menu 单独也要注入 Helper每个版本不一样还是需要单独处理 暂时不弄了 不要下大陆特供版 更新地址: https://s3-us-west-2.amazonaws.com/updateinfo.devmate.com/com.macpaw.CleanMyMac4/beta/updates.xml | 
+| Microsoft Office Word/PowerPoint/Excel/Outlook | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   | 365订阅版 需要从Mac AppStore 下载                                                                                                                                                       |
+| Stash                                          | [2.3.0](https://mac-release-static.stash.ws/Stash-build-221.zip)                                                                                                        |   ❌   |   ✅   | ❌   | 无法设置全局代理 不知道哪里有问题 总体体验较差 不如surge https://mac-release.stash.ws/appcast.xml                                                                                                       |
+| Paste                                          | 4.1.2                                                                                                                                                                   |   ✅   |   ✅   | ✅   | 全新算法，杀！                                                                                                                                                                         | 
+| App Cleaner & Uninstaller                      | 8.2.2                                                                                                                                                                   |   ✅   |   ✅   | ✅   | 因为签名会导致提示盗版，有空在再弄。                                                                                                                                                              | 
+| Affinity Photo 2/Designer 2/Publisher 2 全家桶    | 2.1.1                                                                                                                                                                   |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
+| ProxyMan                                       | [通杀](https://download.proxyman.io/49100/Proxyman_4.10.0.dmg)                                                                                                            |   ✅   |   ✅   | ✅   | 更新地址: https://proxyman.io/osx/version.xml                                                                                                                                       |
+| BuhoCleaner                                    | [通杀](https://www.drbuho.com/buho-public-files/buhocleaner/buhocleaner197150.dmg)                                                                                        |   ✅   |   ✅   | ✅   | 更新地址:https://www.drbuho.com/buho-public-files/buhocleaner/appcast.xml                                                                                                           |
+| Macs Fan Control                               | [通杀](https://crystalidea.com/downloads/macsfancontrol.zip)                                                                                                              |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 |
+| TablePlus                                      | [通杀](https://tableplus.com/release/osx/tableplus_latest)                                                                                                                |   ✅   |   ✅   | ✅   | 老子第一次喷App: 傻逼App 做的跟shit一样 我伪造的授权信息在内存数据结构被篡改成不知道哪来的ObjectC对象引起崩溃 浪费老子时间 真的垃圾App 作者能不能几把优化一下？？ 就这破App 老子弄到凌晨三点 真的狗都不用 而且连个汉化都没有 格局Down Down了                                    |
+| Transmit 5                                     | 5.9.2                                                                                                                                                                   |   ✅   |   ✅   | ✅   | 需要从App Store下载                                                                                                                                                                  |
+| DevUtils                                       | [1.17.0](https://devutils.com/archives/DevUtils-1.17.0.dmg)                                                                                                             |   ✅   |   ✅   | ✅   | 功能可用 但是激活状态我懒得改了 作者写的这个App代码质量之烂令人无语 不想多说什么了                                                                                                                                    |
+| MP3Tag                                         | [1.8.6 (86)](https://updates.mp3tag.app/Mp3tag-1.8.6.zip)                                                                                                               |   ❌   |   ✅   | ✅   | 序列号随便输入 全部激活                                                                                                                                                                    |
+| Widgetter                                      | [通杀](https://apps.apple.com/cn/app/widgetter-%E5%B0%8F%E5%B7%A5%E5%85%B7-%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8-%E4%B8%BB%E9%A2%98-%E5%B1%8F%E4%BF%9D/id1553223588?mt=12) |   ✅   |   ✅   | ✅   | MAS下载 激活全部功能                                                                                                                                                                    |
+| Bartender 5                                    | [5.0.36-通杀](https://macbartender.com/B2/updates/5-0-31/Bartender%205.zip)                                                                                               |   ✅   |   ✅   | ✅   | 更新地址 https://www.macbartender.com/B2/updates/AppcastB5.xml                                                                                                                      |
+| Parallels Desktop                              | [19.1.0](https://download.parallels.com/desktop/v19/19.1.0-54729/ParallelsDesktop-19.1.0-54729.dmg)                                                                     |   ✅   |   ✅   | ✅   | 谁会想到会有人以全家除他以外(含亲妈)全部暴毙的代价冒名顶替别人给我发恐吓律师函呢？                                                                                                                                      |
+| QCAD-Intel                                     | [3.28.2](https://www.qcad.org/archives/qcad/qcad-3.28.2-trial-macos-10.14-13.dmg)                                                                                       |   ❌   |   ✅   | ✅   | ARM懒得弄                                                                                                                                                                          |
+| Bandizip 365                                   | 7.28                                                                                                                                                                    |   ✅   |   ✅   | ✅   | 订阅版                                                                                                                                                                             |
+| Bandizip                                       | 7.28                                                                                                                                                                    |   ✅   |   ✅   | ✅   | 买断版                                                                                                                                                                             |
 
-| Adobe 全家桶               | 版本           | ARM64 | Intel | 特殊说明 全家桶全部支持打开SIP下使用                         |
-|:------------------------|:-------------|:-----:|:-----:|:-----------------------------|
-| Adobe PhotoShop         | 通杀           |   ✅   |   ✅   | PS:Intel上的神经滤镜已经完美可用 ARM的暂时不行                |
-| Adobe Acrobat Pro           | 23.006.20360 |   ✅   |   ✅   |                              |
-| Adobe Illustrator       | 28.0.0       |   ✅   |   ✅   | ARM64 测试通过 X86没有测试过 大家自行测试   |
-| Adobe Lightroom      | 7.0         |   ❌    |   ✅   | 注入后先点试用 然后过期后可以正常使用 |
-| Adobe Lightroom Classic | 13.0.1         |   ❌   |   ✅   | 注入后先点试用 然后过期后可以正常使用                 |
-| Adobe InCopy 2024      | 19.0.0.151         |   ✅    |   ❌   | 在M1 Mac Mini 中测试通过 |
-| Adobe InDesign 2024      | 19.0.0.151         |   ✅    |   ❌   | 在M1 Mac Mini 中测试通过 |
-| Adobe Premiere Pro 2024     | 24.0.0         |   ✅    |   ✅   | 在M1 Mac Mini 中测试通过 |
-| Adobe After Effects 2024      | 24.0.0         |   ✅    |   ✅   | 在M1 Mac Mini 中测试通过 |
-| Adobe Animate 2024      | 24.0         |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过 |
-| Adobe Audition 2024      | 24.0.0.46         |   ✅    |   ✅   | 在M1 Mac Mini 中测试通过 |
-| Adobe Media Encoder 2024      | 24.0         |   ✅    |   ✅   | 在M1 Mac Mini 中测试通过 |
+| Adobe 全家桶                | 版本           | ARM64 | Intel | 特殊说明 全家桶全部支持打开SIP下使用          |
+|:-------------------------|:-------------|:-----:|:-----:|:------------------------------|
+| Adobe PhotoShop          | 通杀           |   ✅   |   ✅   | PS:Intel上的神经滤镜已经完美可用 ARM的暂时不行 |
+| Adobe Acrobat Pro        | 23.006.20360 |   ✅   |   ✅   |                               |
+| Adobe Illustrator        | 28.0.0       |   ✅   |   ✅   | ARM64 测试通过 X86没有测试过 大家自行测试    |
+| Adobe Lightroom          | 7.0          |   ❌   |   ✅   | 注入后先点试用 然后过期后可以正常使用           |
+| Adobe Lightroom Classic  | 13.0.1       |   ❌   |   ✅   | 注入后先点试用 然后过期后可以正常使用           |
+| Adobe InCopy 2024        | 19.0.0.151   |   ✅   |   ❌   | 在M1 Mac Mini 中测试通过            |
+| Adobe InDesign 2024      | 19.0.0.151   |   ✅   |   ❌   | 在M1 Mac Mini 中测试通过            |
+| Adobe Premiere Pro 2024  | 24.0.0       |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
+| Adobe After Effects 2024 | 24.0.0       |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
+| Adobe Animate 2024       | 24.0         |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
+| Adobe Audition 2024      | 24.0.0.46    |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
+| Adobe Media Encoder 2024 | 24.0         |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
 
 激活Adobe后出现This non-genius app解决方案:
 ![ATTENTION](image-10.png)
@@ -203,6 +176,7 @@ https://t.me/+f3BWmkjVCzQwYzM1
 # 激活注意
 
 ## Emby Server 破解
+
 参见 [EmbyServer 破解说明](./EmbyServer)
 
 ## Sublime Text Dev
@@ -237,19 +211,14 @@ PD 19 说明与注意事项:<br>
 
 非常感谢@trueToastedCode，PD 19.1 的破解正是由@trueToastedCode的努力研究成果！
 
-## Stash
-
-https://mac-release.stash.ws/appcast.xml
-
-## ELPass
-
-hey,bro,what's up?
-
-ElPass: https://elpass.app/macos/appcast-beta.xml
-
 ## Surge
 
-目前最新支持 Surge 5.4.0 2417版本.
+纯小白另可参见:
+
+1. [Wolffya編寫的小白参考說明](https://github.com/wolffya/InjectLib/tree/secondary)
+2. [LanYunDev編寫的Surge一鍵激活腳本](./Surge一键脚本)
+
+Surge 更新地址: https://www.nssurge.com/mac/v5/appcast-signed-beta.xml <br>
 
 laoliu，good morning. not good also fine, follow u.
 
@@ -261,15 +230,13 @@ Surge是非常好的一个产品，我发我的补丁 你支持你自己的正�
 
 对开发者团队我无意冒犯，早上好。<br>
 
-Surge 更新地址: https://www.nssurge.com/mac/v5/appcast-signed-beta.xml <br>
-
 一切完美。感谢QQ 302***3398 用户无偿提供授权信息。<br>
 目前错误已全部修正。<br>
 之前安装过旧版本的用户进Surge后先卸载一遍Helper帮助程序才能正常安装帮助程序挂上代理。点击安装帮助程序没反应的不是破解的问题，能不能先去点一下卸载帮助程序呢？<br>
 如果你因为某些软件缺陷第一反应质疑是破解的问题，那么我只能说“SB 你是对的 都是破解的问题 你说的太对了 完全不是你的问题
 完全不是原始软件的问题”因为跟蠢货争论只会浪费我的生命。<br>
 
-## 拦截激活部分App
+### 利用Surge的MitM拦截並激活部分App
 
 Surge可以利用拦截修改http返回值的方式破解下面的app而无需修改原始App。下面是脚本破解步骤，如果你不需要用下面的App，看到这里就可以关闭网页了。
 
@@ -319,7 +286,6 @@ Surge开启MitM和脚本功能，然后: <br>
 
    最后重新执行即可正常注入。这是MacOS的安全策略，麻烦你动动你那个b手点一下好吗？
 
-
 # 警告
 
 一定要关闭SIP，因为我使用的注入方式依赖于关闭SIP。
@@ -338,6 +304,7 @@ Surge开启MitM和脚本功能，然后: <br>
 我认为，共享精神不应该建立在物质上，我深刻的理解金钱对人的吸引和动力，但这种精神本身就超越了物质。
 
 # 群组交流
+
 下方小作文阅前预警:
 
 - 大家都知道楼主一向是有话直说 比较单纯
@@ -350,9 +317,9 @@ Surge开启MitM和脚本功能，然后: <br>
 
 - 愿意学习交流安全共享知识技术的人 不区分大佬和新手 一律欢迎
 - 不抄ChatGPT答案的人
-  - 他妈的ChatGPT给的答案都是0x1000为例子 有的人猪脑子直接复制答案 完全看不到gpt说了是“例如” 还他妈把0xFFFC这种答案复制粘贴
+    - 他妈的ChatGPT给的答案都是0x1000为例子 有的人猪脑子直接复制答案 完全看不到gpt说了是“例如” 还他妈把0xFFFC这种答案复制粘贴
       你这种人确实没脑子 别进了
-  - 真想进就认真答题 错了也会放 我最鄙视的就是没脑子抄答案的人
+    - 真想进就认真答题 错了也会放 我最鄙视的就是没脑子抄答案的人
 
 本群禁止以下人群进入:
 
@@ -377,6 +344,18 @@ Surge开启MitM和脚本功能，然后: <br>
   安全行业的兴趣爱好者或者安全行业的专家,我需要一窍不通的围观群众拉低我群含金量？<br>
 * 我不需要没脑子的人加进群，ok？这种劣质流量等于垃圾，在我眼里这种人一点价值都没有，除了挨喷没有任何作用。
 * 最后声明: 我热烈欢迎安全爱好者一起学习研究，但是没脑子的围观党禁止加群。这种人你非要加群可以，我没事就喷你。看是你的赛博🐎多还是我的键盘厉害。
+
+# ~~免责声明~~wo ze ni ma de b
+
+致来自中国大陆的各位学习研究爱好者:<br>
+根据大陆中华人民共和国《计算机软件保护条例》第十七条规定：“为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。”您需知晓本仓库所有内容资源均来源于网络，仅供用户交流学习与研究使用，版权归属原版权方所有，版权争议与本仓库本作者无关，用户本人下载后不能用作商业或非法用途，需在24小时之内删除，否则后果均由用户承担责任。
+如果你不删那就让这些喜欢发律师函的事务所一对一指导你。
+
+我是來自北美的獨立IOS應用程式開發者,專注於開發有趣又富有創意的應用。對於法律問題,我只能說明技術原理,不能提供任何法律意見。希望大家都能以和平、理性的態度來探討各種課題。
+
+同時, 我也是二次元南桐. 从台灣國立大學毕业的那一天, 我的青春永遠留在了高雄.
+
+對於肆意濫用法律的組織和個人,請將律師和發送至: 华盛顿特区第35大道林肯大街15号-501, John Albet收.
 
 # ~~停更~~
 

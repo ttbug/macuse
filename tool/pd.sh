@@ -24,10 +24,10 @@ echo "${COLOR_INFO}[*] 确保你的版本是: https://download.parallels.com/des
 VERSION_1=$(defaults read "${PDFM_DIR}/Contents/Info.plist" CFBundleShortVersionString)
 VERSION_2=$(defaults read "${PDFM_DIR}/Contents/Info.plist" CFBundleVersion)
 INSTALL_VER="${VERSION_1}-${VERSION_2}"
-if [ "${PDFM_VER}" != "${VERSION_1}-${VERSION_2}" ]; then
-  echo -e "${COLOR_ERR}[-] This script is for ${PDFM_VER}, but your's is ${INSTALL_VER}.${NOCOLOR}"
-  exit 2
-fi
+# if [ "${PDFM_VER}" != "${VERSION_1}-${VERSION_2}" ]; then
+#   echo -e "${COLOR_ERR}[-] This script is for ${PDFM_VER}, but your's is ${INSTALL_VER}.${NOCOLOR}"
+#   exit 2
+# fi
 
 echo "${COLOR_INFO}[*] 复制伪造的授权文件 licenses.json${NOCOLOR}"
 
