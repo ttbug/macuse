@@ -1,11 +1,11 @@
-<p align="center" style="font-size: 21px">macOS 代码注入</p>
+<p align="center" style="font-size: 31px">macOS 代码注入</p>
 <p align="center">秋城落叶<br/>Creative & Design</p>
 <p align="center">For My Mac</p>
 
 <!-- TOC -->
 
 * [聯絡](#聯絡)
-  * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
+    * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
 * [使用](#使用)
 * [问题](#问题)
 * [环境](#环境)
@@ -58,7 +58,7 @@ https://twitter.com/QiuChenly
 这里列举一下可能会遇到的问题。
 
 1. 遇到"xxx想要访问你的机密信息"<br>
-   ![img.png](keyrings.png)<br>
+   ![img.png](./imgs/keyrings.png)<br>
    原因:<br>
    补丁对某些App会自动签名以保证能在SIP打开的情况下使用.但是保存在钥匙串里的信息只能被官方签名的app读取
    自己签名App后会造成丢失权限<br><br>
@@ -72,17 +72,17 @@ https://twitter.com/QiuChenly
 3. 需要移到垃圾篓
    应该是App没有打开过就直接执行注入了。这可能会导致检查不通过，不过影响不是很大。建议App在注入前先运行一次。
 
-   ![移到垃圾桶](image-3.png)
+   ![移到垃圾桶](./imgs/image-3.png)
 
    这是正常的，因为SIP打开的情况下如果修改了App会导致校验不通过，你只需要手动从Finder中右击点开一次就好了:<br>
-   ![打开](image-4.png)
-   ![进一步打开](image-5.png)
+   ![打开](./imgs/image-4.png)
+   ![进一步打开](./imgs/image-5.png)
 
    此时就能正常打开。如果还出现问题，请检查自己的注入操作有没有问题。
 
 4. Operation not permitted<br>
    如下所示。<br>
-   ![simple](image-7.png)<br>
+   ![simple](./imgs/image-7.png)<br>
    ```
    开始注入App: com.nssurge.surge-mac
    /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils.rb:1387:in `initialize': Operation not permitted @ rb_sysopen - /Applications/Surge.app/Contents/Frameworks/Bugsnag.framework/Versions/A/Bugsnag_backup (Errno::EPERM)
@@ -94,8 +94,8 @@ https://twitter.com/QiuChenly
     2. 隐私和安全性<br>
     3. 开发者工具 和 App管理<br>
     4. 两个地方都要打开终端开关，重启终端即可正常执行。<br>
-       ![terminal](image-6.png)<br>
-       ![还有这个](image-8.png)
+       ![terminal](./imgs/image-6.png)<br>
+       ![还有这个](./imgs/image-8.png)
 
 # 环境
 
@@ -165,11 +165,11 @@ https://twitter.com/QiuChenly
 | Adobe Media Encoder 2024 | 24.0         |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
 
 激活Adobe后出现This non-genius app解决方案:
-![ATTENTION](image-10.png)
+![ATTENTION](./imgs/image-10.png)
 不用代理工具的人想办法屏蔽下面的域名,用Surge的人解决方案简单如下:
 
 屏蔽所有*.adobe.io的域名, Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cops.adobe.io为DIRECT,否则App打开就会崩溃。
-![Adobe屏蔽](image-9.png)
+![Adobe屏蔽](./imgs/image-9.png)
 
 另请参见: [Adobe激活产品说明](./Adobe说明.md)
 
@@ -204,6 +204,9 @@ PD 19 说明与注意事项:<br>
 1. 注入后已经不需要原始人启动就可以直接运行了。
 2. 不要command+q强制退出应用，否则注入库没有足够的机会切换文件导致下一次打开的时候显示为未激活。
 3. 总结：正常使用，退出时点退出按钮退出应用程序即可，不要乱秀操作。
+
+出现盗版使用提示，需要屏蔽网络域名即可:
+![Adobe屏蔽](./imgs/image-9.png)
 
 灵感和解决思路来自于:<br>
 仓库: https://github.com/trueToastedCode/ParallelsLab/tree/main<br>
