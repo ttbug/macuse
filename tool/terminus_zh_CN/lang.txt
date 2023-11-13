@@ -9,7 +9,7 @@ title:"Developer Tools"|title:"开发者工具"
 title:"QA Helpers"|title:"Q/A 帮助"
 title:"Invite People"|title:"邀请用户"
 title:"Manage Team"|title:"管理团队"
-title:"Hosts"|title:"Hosts主机"
+title:"Hosts"|title:"远程主机"
 
 "Re-enter your "|"重新输入你的 "
 "To enable this feature, please enter your Termius"|"要启用这个特性, 请输入你的Termius"
@@ -19,6 +19,7 @@ title:"Hosts"|title:"Hosts主机"
 {LOCAL:"Local",REMOTE:"Remote",DYNAMIC:"Dynamic"}|{LOCAL:"本地",REMOTE:"远程",DYNAMIC:"动态"}
 ["Hostname", "Username"]|["主机名", "用户名"]
 ["Name","Date"]|["名称","日期"]
+//["grid","list"]|["表格","列表"]
 
 "Enable Shared Groups"|"启用分享组"
 "Enable Access to Shared Groups";|"启用分享组访问";return {};
@@ -592,7 +593,7 @@ label:"Tags"|label:"标记"
 "Key"|"密钥"
 "Address"|"地址"
 "Search"|"搜索"
-"Business"|"业务"
+"Business"|"商业授权"
 "Manage"|"管理"
 "Version"|"版本"
 "Light"|"明亮"
@@ -696,13 +697,46 @@ title:"Add most common commands for"|title:"添加最常见的命令"
 "New Package"|"新建Package"
 "Set PIN code on your FIDO device to show here."|"在您的FIDO设备上设置PIN码以在此处显示。"
 
+//秋城落叶注释|此行自动忽略
 .user(`Connection to "${s}" established`)|.user(`成功与 "${s}" 建立连接`)
 (`Starting a new connection to "${s}"`)|(`开始一个新的连接: "${s}"`)
 "Edit host"|"编辑主机"
 "Start over"|"重新开始"
 "Copy logs"|"复制日志"
 "Hide logs":"Show logs"|"隐藏日志":"显示日志"
-"Share this "|"分享这个 "
+"Share this ",|"分享这个","主机地址"))},temp = {"删除字段":JSON.stringify(JSON.stringify(
 "SSH on"|"SSH 在"
 " ","port"|" ","端口"
 "Telnet on"|"Telnet 在"
+Hi there! Quick question:"| 嗨嗨,看这里!邀请你快速回答一些小问题:"
+"How do you feel about using Termius lately?"|"最近使用Terminus的感觉怎么样?(秋城落叶注:个人觉得还可以吧)"
+Leave your feedback"|留下你的反馈"
+"Thanks! Would you like to leave your feedback and let us know how we can improve?"|"感谢! 你想要留下反馈帮助改进我们的产品吗?"
+"Thank you for the feedback"|"感谢你的反馈！"
+"We are glad to hear that you enjoy using Termius! Would you leave us a review?"|"我们很高兴听到你很享受使Termius! 你能给我们留下评论吗?"
+"Not happy"|"很恼火,很急"
+"Very happy"|"很开心,Yyds!"
+"You're up-to-date!|"你已经是最新了!为啥这么急?
+"Check back later for updates and notifications"|"等会儿再来看看有没有更新和通知！没事你点这里干嘛呢？"
+"Checking for updates"|"正在检查更新,我知道你很急但你先别急,看看我的😋."
+"New Forwarding"|"新建端口转发"
+,"Terminal")|,"终端")
+" snippets"|" 个片段"
+title:"Add most common commands for"|title:"开始为以下角色添加更多常用的命令"
+title:"Ask AI to write a command for you"|title:"询问AI并让它帮你编写命令"
+"You ","don't"," have file type associations yet"|"你现在 ","还没有"," 关联的文件类型"
+"Here you will be able to see the apps that you chose to open files in SFTP via “Open With...” option"|"在这里，您可以通过“打开方式…”选项查看您选择在SFTP中打开文件的应用程序"
+endAdornment:"arrows"|endAdornment:"方向键"
+"Switch to specific Tab |"切换到指定的Tab页 
+"Termius for Teams"|"Termius团队版"
+"Keeping the whole team up to date"|"让你的团队走在时代潮流先锋!"
+" with the latest changes to the infrastructure is easy with"," ",E.a.createElement("strong",null,"secure sharing")|" 对基础结构进行最新的更改很容易,使用"," ",E.a.createElement("strong",null,"安全分享")
+title:"Shared Snippets"|title:"分享片段"
+"Make your team as productive as you with a shared library of Snippets. Share your best ideas.\n        Gain faster response. Make fewer mistakes."|"通过共享的代码段库，让您的团队和您一样高效。分享您的最佳想法。\n获得更快的响应。减少错误。"
+title:"Shared Hosts",description:"No more IP addresses on Slack and Google Sheets.\n      Enjoy simplified workflow and easy onboarding."|title:"共享主机",description:"Slack和Google Sheets上不再有IP地址。\n享受简化的工作流程和轻松的入职体验。"
+"Invite people"|"开始邀请"
+enabledTitle:"Enabled"|enabledTitle:"启用"
+disabledTitle:"Disabled"|disabledTitle:"禁用"
+enableTitle:"Enabled"|enableTitle:"启用"
+disableTitle:"Disabled"|disableTitle:"禁用"
+>Hold on tight, we’re getting there... <|>我知道你急,但是你先别急,我们有些事要处理一下... <

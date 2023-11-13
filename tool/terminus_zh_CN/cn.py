@@ -30,9 +30,7 @@ def main():
         cnLang = [ll for ll in lang.read().splitlines() if len(ll) > 0]
 
     prefixLink = "/Applications/Termius Beta.app/Contents/Resources/app/js"
-    lstFile = [
-        prefixLink + '/' + ls for ls in os.listdir(prefixLink)
-    ]
+    lstFile = [prefixLink + "/" + ls for ls in os.listdir(prefixLink)]
 
     for file in lstFile:
         if path.exists(file):
@@ -62,7 +60,8 @@ def main():
     pack2asar()
 
 
-cmd = "cp /Applications/Termius\ Beta.app/Contents/Resources/app.asar_副本 /Applications/Termius\ Beta.app/Contents/Resources/app.asar"
-os.system(cmd)
+os.system(
+    "cp /Applications/Termius\ Beta.app/Contents/Resources/app.asar_副本 /Applications/Termius\ Beta.app/Contents/Resources/app.asar"
+)
 os.system("rm -rf /Applications/Termius\ Beta.app/Contents/Resources/app")
 main()
