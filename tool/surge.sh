@@ -1,7 +1,4 @@
 # declare user=$(whoami)
-sudo /bin/launchctl load -w /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist
-sudo /bin/launchctl unload -w /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist
-sudo /bin/launchctl load /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist
 sudo /bin/launchctl unload /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist
 sudo /usr/bin/killall -u root -9 com.nssurge.surge-mac.helper
 sudo /bin/rm /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist
