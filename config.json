@@ -260,6 +260,13 @@
       "injectFile": "sublime_merge"
     },
     {
+      "packageName": "whbalzac.Huajian",
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "bridgeFile": "/Contents/MacOS/",
+      "injectFile": "Live Wallpaper"
+    },
+    {
       "packageName": "com.mac.utility.screen.recorder",
       "bridgeFile": "/Contents/MacOS/",
       "injectFile": "OmniRecorder",
