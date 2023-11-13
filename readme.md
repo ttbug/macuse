@@ -4,26 +4,27 @@
 
 <!-- TOC -->
 
-* [聯絡](#聯絡)
-  * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
-* [使用](#使用)
-* [问题](#问题)
-* [环境](#环境)
-* [MacApp支持](#macapp支持)
-* [iOS App支持](#ios-app支持)
-* [激活注意](#激活注意)
-    * [Emby Server 破解](#emby-server-破解)
-    * [Sublime Text Dev](#sublime-text-dev)
-    * [Sublime Merge Dev](#sublime-merge-dev)
-    * [PD 19](#pd-19)
-    * [Surge](#surge)
-        * [利用Surge的MitM拦截並激活部分App](#利用surge的mitm拦截並激活部分app)
-* [提示](#提示)
-* [警告](#警告)
-* [目的](#目的)
-* [群组交流](#群组交流)
-* [~~免责声明~~wo ze ni ma de b](#免责声明wo-ze-ni-ma-de-b)
-* [~~停更~~](#停更)
+- [聯絡](#聯絡)
+      - [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
+- [使用](#使用)
+- [问题](#问题)
+- [环境](#环境)
+- [MacApp支持](#macapp支持)
+- [iOS App支持](#ios-app支持)
+- [激活注意](#激活注意)
+  - [Emby Server 破解](#emby-server-破解)
+  - [Sublime Text Dev](#sublime-text-dev)
+  - [Sublime Merge Dev](#sublime-merge-dev)
+  - [PD 19](#pd-19)
+  - [Surge](#surge)
+    - [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
+    - [利用Surge的MitM拦截並激活部分App](#利用surge的mitm拦截並激活部分app)
+- [提示](#提示)
+- [警告](#警告)
+- [目的](#目的)
+- [群组交流](#群组交流)
+- [~~免责声明~~wo ze ni ma de b](#免责声明wo-ze-ni-ma-de-b)
+- [~~停更~~](#停更)
 
 <!-- TOC -->
 
@@ -170,7 +171,7 @@ https://twitter.com/QiuChenly
 ![ATTENTION](./imgs/image-10.png)
 不用代理工具的人想办法屏蔽下面的域名,用Surge的人解决方案简单如下:
 
-屏蔽所有*.adobe.io的域名, Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cops.adobe.io为DIRECT,否则App打开就会崩溃。
+屏蔽所有*.adobe.io的域名, Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cops.adobe.io为DIRECT,否则App打开就会崩溃。Lr需要加入photo.adobe.io。
 ![Adobe屏蔽](./imgs/image-9.png)
 
 另请参见: [Adobe激活产品说明](./Adobe说明.md)
