@@ -152,6 +152,7 @@ https://twitter.com/QiuChenly
 | Bandizip 365                                   | 7.28                                                                                                                                                                    |   ✅   |   ✅   | ✅   | 订阅版                                                                                                                                                                             |
 | Bandizip                                       | 7.28                                                                                                                                                                    |   ✅   |   ✅   | ✅   | 买断版                                                                                                                                                                             |
 |花见壁纸|[通杀](https://apps.apple.com/cn/app/%E8%8A%B1%E8%A6%8B-4k%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8%E5%BC%95%E6%93%8E/id1456235760?mt=12)|✅|✅|✅|注入时App名称选择Live Wallpaper|
+|Typora|[通杀](https://download.typora.io/mac/Typora.dmg)|✅|✅|✅|目前激活后第二次打开会崩溃 等修复|
 
 | Adobe 全家桶                | 版本           | ARM64 | Intel | 特殊说明 全家桶全部支持打开SIP下使用          |
 |:-------------------------|:-------------|:-----:|:-----:|:------------------------------|
@@ -244,6 +245,9 @@ PD 19 说明与注意事项:<br>
 非常感谢trueToastedCode提出的想法和美妙设计！
 
 非常感谢@trueToastedCode，PD 19.1 的破解正是由@trueToastedCode的努力研究成果！
+
+## Typora
+注入后的离线激活码 目前激活后会第二次打不开 估计有个啥东西没加上去 目前还不建议用 +eyJzdWNjZXNzIjp0cnVlLCJtc2ciOiJzdWNjZXNzIiwiZW1haWwiOiJRaXVDaGVubHlAcXEuY29tIiwibGljZW5zZSI6IlFpdUNoZW5seV9MaWNlbnNlIn0=|sig#
 
 ## Surge
 
