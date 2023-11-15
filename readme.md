@@ -5,30 +5,33 @@
 <!-- TOC -->
 
 - [聯絡](#聯絡)
-      - [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
+    - [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
 - [使用](#使用)
 - [问题](#问题)
 - [环境](#环境)
 - [MacApp支持](#macapp支持)
 - [iOS App支持](#ios-app支持)
 - [激活注意](#激活注意)
-  - [Emby Server 破解](#emby-server-破解)
-  - [Sublime Text Dev](#sublime-text-dev)
-  - [Sublime Merge Dev](#sublime-merge-dev)
-  - [PD 19](#pd-19)
-  - [Surge](#surge)
-    - [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
-    - [利用Surge的MitM拦截並激活部分App](#利用surge的mitm拦截並激活部分app)
+    - [Emby Server 破解](#emby-server-破解)
+    - [Sublime Text Dev](#sublime-text-dev)
+    - [Sublime Merge Dev](#sublime-merge-dev)
+    - [PD 19](#pd-19)
+    - [Typora](#typora)
+    - [Surge](#surge)
+        - [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
+        - [利用Surge的MitM拦截並激活部分App](#利用surge的mitm拦截並激活部分app)
 - [提示](#提示)
 - [警告](#警告)
 - [目的](#目的)
-- [群组交流](#群组交流)
+- [骂人小作文](#骂人小作文)
 - [~~免责声明~~wo ze ni ma de b](#免责声明wo-ze-ni-ma-de-b)
 - [~~停更~~](#停更)
 
 <!-- TOC -->
 
 # 聯絡
+
+关注我的频道，进群获取最新的注入库文件。
 
 關注我的Telegram頻道和群組,分享最新資訊和技術。
 <br>
@@ -131,7 +134,6 @@ https://twitter.com/QiuChenly
 | Navicat 16 ForOracle                           | 通杀                                                                                                                                                                      |   ❌   |   ✅   | ✅   | 需要从Mac AppStore 下载 我下不到ARM64的版本                                                                                                                                                 |
 | Sublime Text                                   | [通杀](https://download.sublimetext.com/sublime_text_build_4154_mac.zip)                                                                                                  |   ✅   |   ✅   | ✅   | 授权信息下面找。                                                                                                                                                                        |
 | Elpass                                         | [通杀](https://elpass.app/macos/Elpass-1.5.6-490.zip)                                                                                                                     |   ✅   |   ✅   | ✅   | 无法使用云同步 签名后的app通病 无解 搭配Surge脚本可以做到5138年授权 https://elpass.app/macos/appcast-beta.xml                                                                                             |
-| Surge 5                                        | [通杀](https://dl.nssurge.com/mac/v5/Surge-5.4.1-2475-4d9e12213c92f411a549d3e113ebfd18.zip)                                                                               |   ✅   |   ✅   | ✅   | 年度好戏我愿称之为 《窃听风云8:赛博卧底》                                                                                                                                                          | 
 | CleanMyMac X                                   | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   | com.macpaw.CleanMyMac4.Menu 单独也要注入 Helper每个版本不一样还是需要单独处理 暂时不弄了 不要下大陆特供版 更新地址: https://s3-us-west-2.amazonaws.com/updateinfo.devmate.com/com.macpaw.CleanMyMac4/beta/updates.xml | 
 | Microsoft Office Word/PowerPoint/Excel/Outlook | 通杀                                                                                                                                                                      |   ✅   |   ✅   | ✅   | 365订阅版 需要从Mac AppStore 下载                                                                                                                                                       |
 | Stash                                          | [2.3.0](https://mac-release-static.stash.ws/Stash-build-221.zip)                                                                                                        |   ❌   |   ✅   | ❌   | 无法设置全局代理 不知道哪里有问题 总体体验较差 不如surge https://mac-release.stash.ws/appcast.xml                                                                                                       |
@@ -151,8 +153,8 @@ https://twitter.com/QiuChenly
 | QCAD-Intel                                     | [3.28.2](https://www.qcad.org/archives/qcad/qcad-3.28.2-trial-macos-10.14-13.dmg)                                                                                       |   ❌   |   ✅   | ✅   | ARM懒得弄                                                                                                                                                                          |
 | Bandizip 365                                   | 7.28                                                                                                                                                                    |   ✅   |   ✅   | ✅   | 订阅版                                                                                                                                                                             |
 | Bandizip                                       | 7.28                                                                                                                                                                    |   ✅   |   ✅   | ✅   | 买断版                                                                                                                                                                             |
-|花见壁纸|[通杀](https://apps.apple.com/cn/app/%E8%8A%B1%E8%A6%8B-4k%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8%E5%BC%95%E6%93%8E/id1456235760?mt=12)|✅|✅|✅|注入时App名称选择Live Wallpaper|
-|Typora|[通杀](https://download.typora.io/mac/Typora.dmg)|✅|✅|✅|目前激活后第二次打开会崩溃 等修复|
+| 花见壁纸                                           | [通杀](https://apps.apple.com/cn/app/%E8%8A%B1%E8%A6%8B-4k%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8%E5%BC%95%E6%93%8E/id1456235760?mt=12)                                      |   ✅   |   ✅   | ✅   | 注入时App名称选择Live Wallpaper                                                                                                                                                        |
+| Typora                                         | [通杀](https://download.typora.io/mac/Typora.dmg)                                                                                                                         |   ✅   |   ✅   | ✅   | 目前激活后第二次打开会崩溃 等修复                                                                                                                                                               |
 
 | Adobe 全家桶                | 版本           | ARM64 | Intel | 特殊说明 全家桶全部支持打开SIP下使用          |
 |:-------------------------|:-------------|:-----:|:-----:|:------------------------------|
@@ -173,19 +175,23 @@ https://twitter.com/QiuChenly
 ![ATTENTION](./imgs/image-10.png)
 不用代理工具的人想办法屏蔽下面的域名,用Surge的人解决方案简单如下:
 
-屏蔽所有*.adobe.io的域名, Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cops.adobe.io为DIRECT,否则App打开就会崩溃。Lr需要加入photo.adobe.io。
+屏蔽所有*.adobe.io的域名,
+Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cops.adobe.io为DIRECT,否则App打开就会崩溃。Lr需要加入photo.adobe.io。
 ![Adobe屏蔽](./imgs/image-9.png)
 
 另请参见: [Adobe激活产品说明](./Adobe说明.md)
 
 # iOS App支持
 
-| App   | 版本     | 特殊说明                                             |
-|-------|--------|--------------------------------------------------|
-| Surge | v5.8.0 | 战损iPhone 7坏了去修了，修好之后学习怎么破解iOS 学iOS破解第一天 -200 RMB |
-|       |        |                                                  |
-|       |        |                                                  |
-|       |        |                                                  |
+| App   | 版本     | 特殊说明                                                  |
+|-------|--------|-------------------------------------------------------|
+| Surge | v5.8.0 | 还没破解,战损iPhone 7坏了去修了，修好之后学习怎么破解iOS 学iOS破解第一天 -200 RMB |
+
+# 停更的App
+
+| App     | 最后支持                                                                                              | 停更说明                         | 
+|---------|---------------------------------------------------------------------------------------------------|------------------------------|
+| Surge 5 | [5.4.1-2475](https://dl.nssurge.com/mac/v5/Surge-5.4.1-2475-4d9e12213c92f411a549d3e113ebfd18.zip) | 老有小白出问题问我怎么办 不是我的问题我怎么知道怎么办？ | 
 
 # 激活注意
 
@@ -247,7 +253,9 @@ PD 19 说明与注意事项:<br>
 非常感谢@trueToastedCode，PD 19.1 的破解正是由@trueToastedCode的努力研究成果！
 
 ## Typora
-注入后的离线激活码 目前激活后会第二次打不开 估计有个啥东西没加上去 目前还不建议用 +eyJzdWNjZXNzIjp0cnVlLCJtc2ciOiJzdWNjZXNzIiwiZW1haWwiOiJRaXVDaGVubHlAcXEuY29tIiwibGljZW5zZSI6IlFpdUNoZW5seV9MaWNlbnNlIn0=|sig#
+
+注入后的离线激活码 目前激活后会第二次打不开 估计有个啥东西没加上去 目前还不建议用
++eyJzdWNjZXNzIjp0cnVlLCJtc2ciOiJzdWNjZXNzIiwiZW1haWwiOiJRaXVDaGVubHlAcXEuY29tIiwibGljZW5zZSI6IlFpdUNoZW5seV9MaWNlbnNlIn0=|sig#
 
 ## Surge
 
@@ -275,6 +283,7 @@ Surge是非常好的一个产品，我发我的补丁 你支持你自己的正�
 完全不是原始软件的问题”因为跟蠢货争论只会浪费我的生命。<br>
 
 ### Surge Mac 助手程序（Helper）异常处理方式
+
 如果 Surge Mac 助手程序（Helper）异常，会导致无法设置系统代理和无法开启增强模式。（使用 CleanMyMac 或其他清理软件强行清理可能导致该问题）
 
 请参照以下步骤修复：
@@ -282,14 +291,16 @@ Surge是非常好的一个产品，我发我的补丁 你支持你自己的正�
 1. 打开 Surge Mac 的设置界面，选择高级，选择移除助手程序（Remove Helper）。
 2. 输入你的系统密码。
 3. 点击打开终端（Open Terminal）。
-4.  在终端窗口处再次输入系统密码并回车。
+4. 在终端窗口处再次输入系统密码并回车。
 5. 重启电脑。
 6. 打开 Surge，尝试勾选设置为系统代理，输入系统密码重新安装助手程序。
 
 如果依然不正常工作，且之前有使用过某些清理软件禁用 helper，请尝试执行
+
 ```bash
 sudo /bin/launchctl load -w /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist
 ```
+
 由于 macOS 是开发性系统，十分复杂，如果仍然不能正常工作，可能需要尝试重置整个系统。
 
 ### 利用Surge的MitM拦截並激活部分App
@@ -359,7 +370,7 @@ Surge开启MitM和脚本功能，然后: <br>
 
 我认为，共享精神不应该建立在物质上，我深刻的理解金钱对人的吸引和动力，但这种精神本身就超越了物质。
 
-# 群组交流
+# 骂人小作文
 
 下方小作文阅前预警:
 
