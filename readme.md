@@ -5,21 +5,22 @@
 <!-- TOC -->
 
 - [聯絡](#聯絡)
-    - [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
+      - [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
 - [使用](#使用)
 - [问题](#问题)
 - [环境](#环境)
 - [MacApp支持](#macapp支持)
 - [iOS App支持](#ios-app支持)
+- [停更的App](#停更的app)
 - [激活注意](#激活注意)
-    - [Emby Server 破解](#emby-server-破解)
-    - [Sublime Text Dev](#sublime-text-dev)
-    - [Sublime Merge Dev](#sublime-merge-dev)
-    - [PD 19](#pd-19)
-    - [Typora](#typora)
-    - [Surge](#surge)
-        - [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
-        - [利用Surge的MitM拦截並激活部分App](#利用surge的mitm拦截並激活部分app)
+  - [Emby Server 破解](#emby-server-破解)
+  - [Sublime Text Dev](#sublime-text-dev)
+  - [Sublime Merge Dev](#sublime-merge-dev)
+  - [PD 19](#pd-19)
+  - [Typora](#typora)
+  - [Surge](#surge)
+    - [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
+    - [利用Surge的MitM拦截並激活部分App](#利用surge的mitm拦截並激活部分app)
 - [提示](#提示)
 - [警告](#警告)
 - [目的](#目的)
@@ -185,7 +186,7 @@ Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cop
 
 | App                                            | 最后支持                                                                                                | ARM64 | Intel | SIP | 停更说明                                               |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------|-------|-------|-----|----------------------------------------------------|
-| Surge 5                                        | [5.4.1-2475](https://dl.nssurge.com/mac/v5/Surge-5.4.1-2475-4d9e12213c92f411a549d3e113ebfd18.zip)   | ✅     | ✅     | ✅   | 老有聪明人出问题来问我怎么办 不是我的问题我怎么知道怎么办？你不问开发者你问我？傻逼吧你？更你妈更。 |                                  
+| Surge 5                                        | [5.4.1-2491](https://dl.nssurge.com/mac/v5/Surge-5.4.1-2491-1c0e352ec6b0e937bdf55bbab9147f3f.zip)   | ✅     | ✅     | ✅   | 老有聪明人出问题来问我怎么办 不是我的问题我怎么知道怎么办？你不问开发者你问我？傻逼吧你？更你妈更。最后一次更新到2491，后续版本停止支持不要再问了。 |                                  
 | Microsoft Office Word/PowerPoint/Excel/Outlook | 需要从Mac AppStore下载 16.79                                                                             | ✅     | ✅     | ✅   | 365订阅版 我为大家贡献的太多,我有点累了。                            |                                                                                                     |       |                                            |     |                                                    |
 | Parallels  Desktop                             | [19.1.0](https://download.parallels.com/desktop/v19/19.1.0-54729/ParallelsDesktop-19.1.0-54729.dmg) | ✅     | ✅     | ✅   | 谁会想到会有人以全家除他以外(含亲妈)全部暴毙的代价冒名顶替别人给我发恐吓律师函呢？         |    
 | Affinity Photo 2/Designer 2/Publisher 2 全家桶    | MAS  2.1.1                                                                                          | ✅     | ✅     | ✅   | 我有点累了。                                             |
