@@ -43,6 +43,8 @@ done
 
 echo "下发逮捕许可完成,即将有人来查你的水表，你别急...海内存知己,天涯若比邻.正在黑进你的Mac,目前已成功骗取到用户root密码."
 
+sudo cp $PWD/tool/libInjectLib_Legecy.dylib /Applications/Surge.app/Contents/Frameworks/libInjectLib.dylib
+
 xattr -c '/Applications/Surge.app'
 src_info='/Applications/Surge.app/Contents/Info.plist'
 /usr/libexec/PlistBuddy -c "Set :SMPrivilegedExecutables:com.nssurge.surge-mac.helper \"identifier \\\"com.nssurge.surge-mac.helper\\\"\"" "$src_info"
