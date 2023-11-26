@@ -115,6 +115,13 @@
       "injectFile": "HexFiend.framework/Versions/A/HexFiend"
     },
     {
+      "packageName": "com.zzd.Xnip",
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "noDeep": true,
+      "injectFile": "DKDrawKit.framework/Versions/A/DKDrawKit"
+    },
+    {
       "packageName": "com.macpaw.CleanMyMac4",
       "injectFile": "Announcements.framework/Versions/A/Announcements",
       "needCopyToAppDir": true,
