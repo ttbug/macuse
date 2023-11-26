@@ -108,6 +108,13 @@
       "injectFile": "NektonyFallManager.framework/Versions/A/NektonyFallManager"
     },
     {
+      "packageName": "li.zihua.medis2",
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "noDeep": true,
+      "injectFile": "HexFiend.framework/Versions/A/HexFiend"
+    },
+    {
       "packageName": "com.macpaw.CleanMyMac4",
       "injectFile": "Announcements.framework/Versions/A/Announcements",
       "needCopyToAppDir": true,
