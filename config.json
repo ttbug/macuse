@@ -197,6 +197,12 @@
       "noDeep": true
     },
     {
+      "packageName": "com.apple.FinalCutTrial",
+      "injectFile": "TLKit.framework/Versions/A/TLKit",
+      "needCopyToAppDir": true,
+      "noDeep": true
+    },
+    {
       "packageName": "com.adobe.Adobe-Animate-2024.application",
       "appBaseLocate": "/Applications/Adobe Animate 2024/Adobe Animate 2024.app",
       "injectFile": "AdobeAGM.framework/Versions/A/AdobeAGM",

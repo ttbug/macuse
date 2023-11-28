@@ -153,6 +153,7 @@ https://twitter.com/QiuChenly
 | Medis                    | [3100](https://api.getmedis.com/medis-latest.zip)                                                                                                                         |   ✅   |   ✅   | ✅   | 仅支持3100 |
 | Xnip                    | [通殺](https://apps.apple.com/cn/app/xnip-%E6%88%AA%E5%9B%BE-%E6%A0%87%E6%B3%A8/id1221250572?mt=12)                                                                                                                         |   ✅   |   ✅   | ✅   | 通殺不要問為什麼 |
 | Camtasia 2023                    | [2023.3.4(124306)通杀](https://www.techsmith.com/camtasia.html) |   ✅   |   ✅   | ✅   | 通殺不要問為什麼 |
+| Final Cut Pro Trial                    | [10.6.10)通杀](https://secure-appldnld.apple.com/Final_Cut_Pro_X/042-60959-20231004-B5BFDED9-9530-49C9-97EB-B7B617BC5026/FinalCutProTrial.dmg) |   ✅   |   ✅   | ✅   | 通殺不要問為什麼 |
 
 | Adobe 全家桶                | 版本           | ARM64 | Intel | 特殊说明 全家桶全部支持打开SIP下使用          |
 |:-------------------------|:-------------|:-----:|:-----:|:------------------------------|
