@@ -125,8 +125,8 @@
       "packageName": "com.techsmith.camtasia2023",
       "needCopyToAppDir": true,
       "deepSignApp": true,
-      "noDeep": true,
-      "injectFile": "TSCAccount.framework/Versions/A/TSCAccount"
+      "injectFile": "TSCAccount.framework/Versions/A/TSCAccount",
+      "extraShell": "camtasia.sh"
     },
     {
       "packageName": "com.macpaw.CleanMyMac4",
