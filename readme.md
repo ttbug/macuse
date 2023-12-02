@@ -153,7 +153,9 @@ https://twitter.com/QiuChenly
 | Medis                    | [3100](https://api.getmedis.com/medis-latest.zip)                                                                                                                         |   ✅   |   ✅   | ✅   | 仅支持3100 |
 | Xnip                    | [通殺](https://apps.apple.com/cn/app/xnip-%E6%88%AA%E5%9B%BE-%E6%A0%87%E6%B3%A8/id1221250572?mt=12)                                                                                                                         |   ✅   |   ✅   | ✅   | 通殺不要問為什麼 |
 | Camtasia 2023                    | [2023.3.4(124306)通杀](https://www.techsmith.com/camtasia.html) |   ✅   |   ✅   | ✅   | 通殺不要問為什麼 |
-| Final Cut Pro Trial                    | [10.6.10)通杀](https://secure-appldnld.apple.com/Final_Cut_Pro_X/042-60959-20231004-B5BFDED9-9530-49C9-97EB-B7B617BC5026/FinalCutProTrial.dmg) |   ✅   |   ✅   | ✅   | 通殺不要問為什麼 |
+| Final Cut Pro Trial                    | [(10.6.10)通杀](https://secure-appldnld.apple.com/Final_Cut_Pro_X/042-60959-20231004-B5BFDED9-9530-49C9-97EB-B7B617BC5026/FinalCutProTrial.dmg) |   ✅   |   ✅   | ✅   | 通殺不要問為什麼 |
+| MacUpdater                    | [激活码通杀](https://www.corecode.io/downloads/macupdater_latest.dmg) |   ✅   |   ✅   | ✅   | 通殺序列号下面找 |
+
 
 | Adobe 全家桶                | 版本           | ARM64 | Intel | 特殊说明 全家桶全部支持打开SIP下使用          |
 |:-------------------------|:-------------|:-----:|:-----:|:------------------------------|
@@ -201,6 +203,41 @@ Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cop
 | OmniPlayer                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             |
 
 # 激活注意
+
+## MacUpdater通杀说明
+
+1. Surge需要实时挂着，因为App会发送授权检查请求，所以需要Surge即时处理激活检查请求。
+2. 序列号最好选Pro/Business. 因为这两个版本最贵.
+3. [[重要⚠️]]() Surge打开Mitm,安装并信任Surge证书,加入解密域名: "\*.execute-api.\*.amazonaws.com"
+   ![解密](imgs/decodeSSL.png)
+4. Surge的配置文件手动编辑并在[script]一栏中加入以下内容:
+   ```js
+   [Script]
+   MacUpdater = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-activate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
+   MacUpdaterDeac = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-deactivate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
+   MacUpdaterAuthorization = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-authenticate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
+   ```
+   [配置参考文件样例](Surge激活脚本/Surge脚本配置例子.conf)
+   ![JS](imgs/js配置.png)
+5. paddle_act.js内容为:
+   [js参考文件样例](Surge激活脚本/paddle_act.js)
+6. 下载官方最新App,确认自己Surge打开了Mitm并开启了解密功能，确认脚本已经加入，确认配置文件内容是正确的。
+   然后使用激活码激活，邮箱和密钥我已经计算出了12个,随意取用。
+
+```
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 4su3e2-3sieuz-rd1377-m5uy37-nokwbp-tg3pro
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 m5701d-1jff26-8lczo3-xqbcpi-p58uk9-8i3pup
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 yb8kym-cu4zqy-o3rols-ia5b07-0blvwn-6c3pus
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Business 序列号 9yskpn-byzany-tattsu-fkfwe3-m11x8b-tu3pbu
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 qbykhd-rdwhjt-1vx85g-18qt37-xq2oqb-8j3std
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 r6lv4k-ehs5pc-8adqkr-cbpmjf-nkiszs-5k3sup
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 f1l6pl-qj6wva-zxm8ul-b8l49f-2iuy4o-u13pro
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 4cwdgv-byored-w71aed-ke02f6-bdwizb-jf3pup
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 qqe7o0-e777zs-zarq0m-rspitd-xmpeqn-wi3pus
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Business 序列号 bzx3w4-auuwsb-kddrbx-fhplww-uv7f48-rp3pbu
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 deobb4-5le62f-78k7xb-cv24rd-2bitkc-g53std
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 7in8ic-qyw62m-3nhvhr-ehv5t6-dp3tp1-3h3sup
+```
 
 ## Emby Server 破解
 

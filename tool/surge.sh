@@ -43,8 +43,6 @@ done
 
 echo "下发逮捕许可完成,即将有人来查你的水表，你别急...海内存知己,天涯若比邻.正在黑进你的Mac,目前已成功骗取到用户root密码."
 
-sudo cp $PWD/tool/libInjectLib_Legecy.dylib /Applications/Surge.app/Contents/Frameworks/libInjectLib.dylib
-
 xattr -c '/Applications/Surge.app'
 src_info='/Applications/Surge.app/Contents/Info.plist'
 /usr/libexec/PlistBuddy -c "Set :SMPrivilegedExecutables:com.nssurge.surge-mac.helper \"identifier \\\"com.nssurge.surge-mac.helper\\\"\"" "$src_info"
@@ -53,5 +51,7 @@ src_info='/Applications/Surge.app/Contents/Info.plist'
 codesign -f -s - --all-architectures --deep /Applications/Surge.app/Contents/Library/LaunchServices/com.nssurge.surge-mac.helper
 codesign -f -s - --all-architectures --deep /Applications/Surge.app
 # python /Users/qiuchenly/Downloads/SMJobBless/SMJobBlessUtil.py check /Applications/Surge.app
+
+sudo cp $PWD/tool/libInjectLib_Legecy.dylib /Applications/Surge.app/Contents/Frameworks/libInjectLib.dylib
 
 echo "恭喜你！你的Mac已经被我植入了后门程序,现在即将结束整个进程，特工已经在对面楼中布下天罗地网，请主动自首争取宽大处理(虽然宽大不了几天)，记得下辈子不要用盗版软件🙏。\n"

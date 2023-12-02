@@ -400,6 +400,19 @@
       "needCopyToAppDir": true,
       "deepSignApp": true,
       "noDeep": true
+    },
+    {
+      "packageName": "com.crossutility.quantumult-x",
+      "injectFile": "Quantumult X",
+      "bridgeFile": "/Contents/MacOS/",
+      "needCopyToAppDir": true,
+      "deepSignApp": true
+    },
+    {
+      "packageName": "com.corecode.MacUpdater",
+      "injectFile": "Sparkle.framework/Versions/B/Sparkle",
+      "needCopyToAppDir": true,
+      "deepSignApp": true
     }
   ]
 }
