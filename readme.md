@@ -4,31 +4,29 @@
 
 <!-- TOC -->
 
-- [聯絡](#聯絡)
-      - [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
-- [使用](#使用)
-- [问题](#问题)
-- [环境](#环境)
-- [MacApp支持](#macapp支持)
-- [iOS App支持](#ios-app支持)
-- [停更的App](#停更的app)
-- [激活注意](#激活注意)
-  - [Emby Server 破解](#emby-server-破解)
-  - [Sublime Text Dev](#sublime-text-dev)
-  - [Sublime Merge Dev](#sublime-merge-dev)
-  - [PD 19](#pd-19)
-  - [Typora](#typora)
-  - [Surge](#surge)
-    - [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
-    - [利用Surge的MitM拦截並激活部分App](#利用surge的mitm拦截並激活部分app)
-- [提示](#提示)
-- [警告](#警告)
-- [目的](#目的)
-- [骂人小作文](#骂人小作文)
-- [~~免责声明~~wo ze ni ma de b](#免责声明wo-ze-ni-ma-de-b)
-- [~~停更~~](#停更)
-
-<!-- TOC -->
+* [聯絡](#聯絡)
+      * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
+* [警告](#警告)
+* [使用](#使用)
+* [【用前必读】重要提示](#用前必读重要提示)
+* [【用前必读】可能会遇到的问题](#用前必读可能会遇到的问题)
+* [操作系统要求 & 代码编译环境要求](#操作系统要求--代码编译环境要求)
+* [支持的 macOS App](#支持的-macos-app)
+  * [Surge 激活必读](#surge-激活必读)
+    * [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
+  * [Adobe 全家桶激活必读](#adobe-全家桶激活必读)
+  * [~~MacUpdater 激活必读~~ 会有屏蔽设备的风险，不建议使用](#macupdater-激活必读-会有屏蔽设备的风险不建议使用)
+  * [Emby Server 激活必读](#emby-server-激活必读)
+  * [Sublime 激活必读](#sublime-激活必读)
+  * [PD 19 激活必读](#pd-19-激活必读)
+  * [Typora 激活必读](#typora-激活必读)
+* [支持的 iOS App](#支持的-ios-app)
+* [利用 Surge 的 MitM 拦截功能支持激活的 macOS App](#利用-surge-的-mitm-拦截功能支持激活的-macos-app)
+* [不再支持的 App](#不再支持的-app)
+* [目的](#目的)
+* [骂人小作文](#骂人小作文)
+* [~~免责声明~~wo ze ni ma de b](#免责声明wo-ze-ni-ma-de-b)
+* [~~停更~~](#停更)
 
 # 聯絡
 
@@ -55,6 +53,12 @@ https://twitter.com/QiuChenly
 
 [![启动](https://i2.hdslb.com/bfs/archive/966fe6fe2c1329919bb8972d69fb8c09d17047cc.jpg@100w_100h_1c.png)](https://ipfs.lanyundev.com/ipfs/bafybeigpm6ocaba2wlgi7zgio3lu7hzqxgrviiicuwc5xbddlo77leabcy/6e51fccaeb5343bda366d42e68c3c705.MP4)
 
+# 警告
+
+一定要关闭SIP，因为我使用的注入方式依赖于关闭SIP。
+但是有例外，上方表格中App的SIP状态为"✅"则可以不用关闭SIP即可使用,并且注入下载文件夹不需要保留，注入后可以删除。
+本库中几乎所有的App都建议你在打开SIP状态下使用，不建议用户关闭SIP，除非你很懂这块。
+
 # 使用
 
 1. 下载整个仓库并解压，双击运行"原神_启动.command"并输入密码，按照提示操作。
@@ -62,9 +66,31 @@ https://twitter.com/QiuChenly
    小白不知道点哪里下载整个仓库？[点我下载](https://github.com/QiuChenlyOpenSource/InjectLib/archive/refs/heads/main.zip)
 2. 要是你不差这几分钟时间，从头到尾先认真读一遍这个readme，可能你看完之后会解决你的部分疑惑。
 
-# 问题
+# 【用前必读】重要提示
 
-这里列举一下可能会遇到的问题。
+<details>
+<summary>点击展开</summary>
+
+1. 本脚本会自动扫描本地安装的App，你只需要在想注入的App后面输入y即可。
+2. Adobe App如果不想让官方ACC乱拉屎，可以用这个仓库下载v6版本的离线安装包: https://github.com/Drovosek01/adobe-packager,
+   然后配合AntiCC之类的组件运行Adobe产品。
+3. 激活之后由于App还需要依赖我的注入代码，所以不要移动注入文件夹或者删除注入文件夹，有的人用完就把注入文件夹删了，第二天就到处说破解不稳定第二次就崩溃。
+   这种人你动动你那个🐷脑子想想为什么第一次能用删了我的注入文件夹第二次打开就崩溃？
+4. 脚本如果没有权限执行注入操作终端报错类似于下面这样:<br>
+   ![示例](imgs/image-2.png)
+   那是因为SIP的安全策略限制不允许运行不符合安全策略的代码执行，所以你需要先打开:<br>
+   设置 - 隐私与安全性 - 开发者工具:<br>
+   ![开发者工具](imgs/image.png)<br>
+   并打开终端执行代码策略:<br>
+   ![策略](imgs/image-1.png)<br>
+
+   最后重新执行即可正常注入。这是MacOS的安全策略，麻烦你动动你那个b手点一下好吗？
+
+</details>
+
+# 【用前必读】可能会遇到的问题
+<details>
+<summary>点击展开</summary>
 
 1. 遇到"xxx想要访问你的机密信息"<br>
    ![img.png](./imgs/keyrings.png)<br>
@@ -72,11 +98,11 @@ https://twitter.com/QiuChenly
    补丁对某些App会自动签名以保证能在SIP打开的情况下使用.但是保存在钥匙串里的信息只能被官方签名的app读取
    自己签名App后会造成丢失权限<br><br>
    解决方案:<br>
-   輸入你的密碼，並點擊始終允許即可。
+   輸入你的密碼，並點擊始終允許即可。<br><br>
 
 2. 我不会用终端<br>
    解决方案:<br>
-   使用我提供的"原神_启动.command"来进行注入。软件界面简单,只需要按提示操作即可完成注入工作,无需手動打開終端。
+   使用我提供的"原神_启动.command"来进行注入。软件界面简单,只需要按提示操作即可完成注入工作,无需手動打開終端。<br><br>
 
 3. 需要移到垃圾篓
    应该是App没有打开过就直接执行注入了。这可能会导致检查不通过，不过影响不是很大。建议App在注入前先运行一次。
@@ -87,7 +113,7 @@ https://twitter.com/QiuChenly
    ![打开](./imgs/image-4.png)
    ![进一步打开](./imgs/image-5.png)
 
-   此时就能正常打开。如果还出现问题，请检查自己的注入操作有没有问题。
+   此时就能正常打开。如果还出现问题，请检查自己的注入操作有没有问题。<br><br>
 
 4. Operation not permitted<br>
    如下所示。<br>
@@ -106,9 +132,11 @@ https://twitter.com/QiuChenly
        ![terminal](./imgs/image-6.png)<br>
        ![还有这个](./imgs/image-8.png)
 
-# 环境
+</details>
 
-代码运行最低操作系统要求&此代码编译环境
+# 操作系统要求 & 代码编译环境要求
+<details>
+<summary>点击展开</summary>
 
 - 最低运行 macOS High Sierra 10.13
 - 编译SDK macOS 14.0
@@ -118,12 +146,17 @@ https://twitter.com/QiuChenly
 - 检查二进制文件的最低macOS版本兼容性
     - ```find . -name "*.*" | xargs otool -l | grep -E "(minos|sdk)"```
 
-# MacApp支持
+</details>
 
-新增的SIP栏说明:<br>
+***
 
-- ❌: 表示只能关闭SIP使用<br>
-- ✅: 表示可以在打开SIP的机器上使用<br>
+# 支持的 macOS App
+
+<details>
+<summary>点击展开</summary>
+
+- ARM64 & Intel: ✅ 表示可用, ❌ 表示不可用<br>
+- SIP: ✅ 表示可以在打开SIP的机器上使用, ❌ 表示只能在关闭SIP使用<br>
 
 | App                       | 版本                                                                                                                                                                      | ARM64 | Intel | SIP | 特殊要求                                                                                                                                                                            |
 |:--------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----:|:-----:|-----|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -172,136 +205,10 @@ https://twitter.com/QiuChenly
 | Adobe Audition 2024      | 24.0.0.46    |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
 | Adobe Media Encoder 2024 | 24.0         |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
 
-激活Adobe后出现This non-genius app解决方案:
-![ATTENTION](./imgs/image-10.png)
-不用代理工具的人想办法屏蔽下面的域名,用Surge的人解决方案简单如下:
+## Surge 激活必读
 
-屏蔽所有*.adobe.io的域名,
-Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cops.adobe.io为DIRECT,否则App打开就会崩溃。Lr需要加入photo.adobe.io。
-![Adobe屏蔽](./imgs/image-9.png)
-
-另请参见: [Adobe激活产品说明](./Adobe说明.md)
-
-# iOS App支持
-
-| App   | 版本     | 特殊说明                                                  |
-|-------|--------|-------------------------------------------------------|
-| Surge | v5.8.0 | 还没破解,战损iPhone 7坏了去修了，修好之后学习怎么破解iOS 学iOS破解第一天 -200 RMB |
-
-# 停更的App
-
-| App                                            | 最后支持                                                                                                | ARM64 | Intel | SIP | 停更说明                                               |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------|-------|-------|-----|----------------------------------------------------|
-| Surge 5                                        | [5.4.3-2534](https://dl.nssurge.com/mac/v5/Surge-5.4.3-2534-268d388eb65d3053d4590169885f52e8.zip)   | ✅     | ✅     | ✅   | 老有聪明人出问题来问我怎么办 不是我的问题我怎么知道怎么办？你不问开发者你问我？傻逼吧你？更你妈更。我逆向培训班打折前原价就是2499，正好推送了2499，那就最后一次更新到2499，后续版本停止支持不要再问了。 |                                  
-| Microsoft Office Word/PowerPoint/Excel/Outlook | 需要从Mac AppStore下载 16.79                                                                             | ✅     | ✅     | ✅   | 365订阅版 我为大家贡献的太多,我有点累了。                            |                                                                                                     |       |                                            |     |                                                    |
-| Parallels  Desktop                             | [19.1.0](https://download.parallels.com/desktop/v19/19.1.0-54729/ParallelsDesktop-19.1.0-54729.dmg) | ✅     | ✅     | ✅   | 谁会想到会有人以全家除他以外(含亲妈)全部暴毙的代价冒名顶替别人给我发恐吓律师函呢？         |    
-| Affinity Photo 2/Designer 2/Publisher 2 全家桶    | MAS  2.1.1                                                                                          | ✅     | ✅     | ✅   | 我有点累了。                                             |
-| iShot                                          | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
-| Infuse Pro                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
-| 解优2                                            | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
-| Omi录屏专家                                        | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
-| OmniPlayer                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             |
-
-# 激活注意
-
-## MacUpdater通杀说明
-
-1. Surge需要实时挂着，因为App会发送授权检查请求，所以需要Surge即时处理激活检查请求。
-2. 序列号最好选Pro/Business. 因为这两个版本最贵.
-3. [[重要⚠️]]() Surge打开Mitm,安装并信任Surge证书,加入解密域名: "\*.execute-api.\*.amazonaws.com"
-   ![解密](imgs/decodeSSL.png)
-4. Surge的配置文件手动编辑并在[script]一栏中加入以下内容:
-   ```js
-   [Script]
-   MacUpdater = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-activate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
-   MacUpdaterDeac = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-deactivate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
-   MacUpdaterAuthorization = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-authenticate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
-   ```
-   [配置参考文件样例](Surge激活脚本/Surge脚本配置例子.conf)
-   ![JS](imgs/js配置.png)
-5. paddle_act.js内容为:
-   [js参考文件样例](Surge激活脚本/paddle_act.js)
-6. 下载官方最新App,确认自己Surge打开了Mitm并开启了解密功能，确认脚本已经加入，确认配置文件内容是正确的。
-   然后使用激活码激活，邮箱和密钥我已经计算出了12个,随意取用。
-
-```
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 4su3e2-3sieuz-rd1377-m5uy37-nokwbp-tg3pro
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 m5701d-1jff26-8lczo3-xqbcpi-p58uk9-8i3pup
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 yb8kym-cu4zqy-o3rols-ia5b07-0blvwn-6c3pus
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Business 序列号 9yskpn-byzany-tattsu-fkfwe3-m11x8b-tu3pbu
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 qbykhd-rdwhjt-1vx85g-18qt37-xq2oqb-8j3std
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 r6lv4k-ehs5pc-8adqkr-cbpmjf-nkiszs-5k3sup
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 f1l6pl-qj6wva-zxm8ul-b8l49f-2iuy4o-u13pro
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 4cwdgv-byored-w71aed-ke02f6-bdwizb-jf3pup
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 qqe7o0-e777zs-zarq0m-rspitd-xmpeqn-wi3pus
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Business 序列号 bzx3w4-auuwsb-kddrbx-fhplww-uv7f48-rp3pbu
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 deobb4-5le62f-78k7xb-cv24rd-2bitkc-g53std
-# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 7in8ic-qyw62m-3nhvhr-ehv5t6-dp3tp1-3h3sup
-```
-
-## Emby Server 破解
-
-参见 [EmbyServer 破解说明](./EmbyServer)
-
-## Sublime Text Dev
-
-```
------ BEGIN LICENSE -----
-秋城落叶@52pojie.com
-Unlimited User License
-EA7E-8888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
------- END LICENSE ------
-```
-
-## Sublime Merge Dev
-
-```
------BEGIN LICENSE-----
-秋城落叶@52pojie.com
-Unlimited User License
-E52D-8888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
-88888888888888888888888888888888
------END LICENSE-----
-```
-
-## PD 19
-
-PD 19 说明与注意事项:<br>
-
-1. 注入后已经不需要原始人启动就可以直接运行了。
-2. 不要command+q强制退出应用，否则注入库没有足够的机会切换文件导致下一次打开的时候显示为未激活。
-3. 总结：正常使用，退出时点退出按钮退出应用程序即可，不要乱秀操作。
-
-出现盗版使用提示，需要屏蔽网络域名即可:
-![Adobe屏蔽](./imgs/image-9.png)
-
-灵感和解决思路来自于:<br>
-仓库: https://github.com/trueToastedCode/ParallelsLab/tree/main<br>
-非常感谢trueToastedCode提出的想法和美妙设计！
-
-非常感谢@trueToastedCode，PD 19.1 的破解正是由@trueToastedCode的努力研究成果！
-
-## Typora
-
-注入后的离线激活码 目前激活后会第二次打不开 估计有个啥东西没加上去 目前还不建议用
-+eyJzdWNjZXNzIjp0cnVlLCJtc2ciOiJzdWNjZXNzIiwiZW1haWwiOiJRaXVDaGVubHlAcXEuY29tIiwibGljZW5zZSI6IlFpdUNoZW5seV9MaWNlbnNlIn0=|sig#
-
-## Surge
+<details>
+<summary>点击展开</summary>
 
 纯小白另可参见:
 
@@ -340,14 +247,210 @@ Surge是非常好的一个产品，我发我的补丁 你支持你自己的正�
 6. 打开 Surge，尝试勾选设置为系统代理，输入系统密码重新安装助手程序。
 
 如果依然不正常工作，且之前有使用过某些清理软件禁用 helper，请尝试执行
-
 ```bash
 sudo /bin/launchctl load -w /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist
 ```
 
 由于 macOS 是开发性系统，十分复杂，如果仍然不能正常工作，可能需要尝试重置整个系统。
 
-### 利用Surge的MitM拦截並激活部分App
+</details>
+
+## Adobe 全家桶激活必读
+
+<details>
+<summary>点击展开</summary>
+
+激活Adobe后出现This non-genius app提示:
+![ATTENTION](./imgs/image-10.png)
+**解决办法:**
+
+不用代理工具的人想办法屏蔽下面的域名,用Surge的人解决方案简单如下:
+
+屏蔽所有*.adobe.io的域名,
+Surge手动增加规则DOMAIN-SUFFIX,值为adobe.io,但是要注意放行lcs-cops.adobe.io为DIRECT,否则App打开就会崩溃。Lr需要加入photo.adobe.io。
+![Adobe屏蔽](./imgs/image-9.png)
+
+另请参见: [Adobe激活产品说明](./Adobe说明.md)
+
+</details>
+
+## ~~MacUpdater 激活必读~~ 会有屏蔽设备的风险，不建议使用
+
+<details>
+<summary>点击展开</summary>
+
+1. Surge需要实时挂着，因为App会发送授权检查请求，所以需要Surge即时处理激活检查请求。
+2. 序列号最好选Pro/Business. 因为这两个版本最贵.
+3. [[重要⚠️]]() Surge打开Mitm,安装并信任Surge证书,加入解密域名: "\*.execute-api.\*.amazonaws.com"
+   ![解密](imgs/decodeSSL.png)
+4. Surge的配置文件手动编辑并在[script]一栏中加入以下内容:
+   ```js
+   [Script]
+   MacUpdater = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-activate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
+   MacUpdaterDeac = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-deactivate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
+   MacUpdaterAuthorization = type=http-request,pattern=https://.*?.execute-api.*.amazonaws.com/default/meddle-authenticate,requires-body=1,max-size=0,debug=1,script-path=paddle_act.js
+   ```
+   [配置参考文件样例](Surge激活脚本/Surge脚本配置例子.conf)
+   ![JS](imgs/js配置.png)
+5. paddle_act.js内容为:
+   [js参考文件样例](Surge激活脚本/paddle_act.js)
+6. 下载官方最新App,确认自己Surge打开了Mitm并开启了解密功能，确认脚本已经加入，确认配置文件内容是正确的。
+   然后使用激活码激活，邮箱和密钥我已经计算出了12个,随意取用。
+
+```
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 4su3e2-3sieuz-rd1377-m5uy37-nokwbp-tg3pro
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 m5701d-1jff26-8lczo3-xqbcpi-p58uk9-8i3pup
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 yb8kym-cu4zqy-o3rols-ia5b07-0blvwn-6c3pus
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Business 序列号 9yskpn-byzany-tattsu-fkfwe3-m11x8b-tu3pbu
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 qbykhd-rdwhjt-1vx85g-18qt37-xq2oqb-8j3std
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 r6lv4k-ehs5pc-8adqkr-cbpmjf-nkiszs-5k3sup
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 f1l6pl-qj6wva-zxm8ul-b8l49f-2iuy4o-u13pro
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 4cwdgv-byored-w71aed-ke02f6-bdwizb-jf3pup
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Pro 序列号 qqe7o0-e777zs-zarq0m-rspitd-xmpeqn-wi3pus
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Business 序列号 bzx3w4-auuwsb-kddrbx-fhplww-uv7f48-rp3pbu
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 deobb4-5le62f-78k7xb-cv24rd-2bitkc-g53std
+# 邮箱: QiuChenly@github.com 版本 MacUpdater 3 Standard 序列号 7in8ic-qyw62m-3nhvhr-ehv5t6-dp3tp1-3h3sup
+```
+
+</details>
+
+## Emby Server 激活必读
+
+<details>
+<summary>点击展开</summary>
+
+参见 [EmbyServer 破解说明](./EmbyServer)
+
+</details>
+
+## Sublime 激活必读
+
+<details>
+<summary>点击展开</summary>
+
+Sublime Text Dev
+
+```
+----- BEGIN LICENSE -----
+秋城落叶@52pojie.com
+Unlimited User License
+EA7E-8888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+------ END LICENSE ------
+```
+
+Sublime Merge Dev
+
+```
+-----BEGIN LICENSE-----
+秋城落叶@52pojie.com
+Unlimited User License
+E52D-8888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+-----END LICENSE-----
+```
+
+</details>
+
+## PD 19 激活必读
+
+<details>
+<summary>点击展开</summary>
+
+PD 19 说明与注意事项:<br>
+
+1. 注入后已经不需要原始人启动就可以直接运行了。
+2. 不要command+q强制退出应用，否则注入库没有足够的机会切换文件导致下一次打开的时候显示为未激活。
+3. 总结：正常使用，退出时点退出按钮退出应用程序即可，不要乱秀操作。
+
+出现盗版使用提示，需要屏蔽网络域名即可:
+![Adobe屏蔽](./imgs/image-9.png)
+
+灵感和解决思路来自于:<br>
+仓库: https://github.com/trueToastedCode/ParallelsLab/tree/main<br>
+非常感谢trueToastedCode提出的想法和美妙设计！
+
+非常感谢@trueToastedCode，PD 19.1 的破解正是由@trueToastedCode的努力研究成果！
+
+</details>
+
+## Typora 激活必读
+
+<details>
+<summary>点击展开</summary>
+
+注入后的离线激活码 目前激活后会第二次打不开 估计有个啥东西没加上去 目前还不建议用
++eyJzdWNjZXNzIjp0cnVlLCJtc2ciOiJzdWNjZXNzIiwiZW1haWwiOiJRaXVDaGVubHlAcXEuY29tIiwibGljZW5zZSI6IlFpdUNoZW5seV9MaWNlbnNlIn0=|sig#
+
+</details>
+
+</details>
+
+# 支持的 iOS App
+
+<details>
+<summary>点击展开</summary>
+
+| App   | 版本     | 特殊说明                                                  |
+|-------|--------|-------------------------------------------------------|
+| Surge | v5.8.0 | 还没破解,战损iPhone 7坏了去修了，修好之后学习怎么破解iOS 学iOS破解第一天 -200 RMB |
+
+</details>
+
+# 不再支持的 App
+
+<details>
+<summary>点击展开</summary>
+
+| App                                            | 最后支持                                                                                                | ARM64 | Intel | SIP | 停更说明                                               |
+|------------------------------------------------|-----------------------------------------------------------------------------------------------------|-------|-------|-----|----------------------------------------------------|
+| Surge 5                                        | [5.4.3-2534](https://dl.nssurge.com/mac/v5/Surge-5.4.3-2534-268d388eb65d3053d4590169885f52e8.zip)   | ✅     | ✅     | ✅   | 老有聪明人出问题来问我怎么办 不是我的问题我怎么知道怎么办？你不问开发者你问我？傻逼吧你？更你妈更。我逆向培训班打折前原价就是2499，正好推送了2499，那就最后一次更新到2499，后续版本停止支持不要再问了。 |                                  
+| Microsoft Office Word/PowerPoint/Excel/Outlook | 需要从Mac AppStore下载 16.79                                                                             | ✅     | ✅     | ✅   | 365订阅版 我为大家贡献的太多,我有点累了。                            |                                                                                                     |       |                                            |     |                                                    |
+| Parallels  Desktop                             | [19.1.0](https://download.parallels.com/desktop/v19/19.1.0-54729/ParallelsDesktop-19.1.0-54729.dmg) | ✅     | ✅     | ✅   | 谁会想到会有人以全家除他以外(含亲妈)全部暴毙的代价冒名顶替别人给我发恐吓律师函呢？         |    
+| Affinity Photo 2/Designer 2/Publisher 2 全家桶    | MAS  2.1.1                                                                                          | ✅     | ✅     | ✅   | 我有点累了。                                             |
+| iShot                                          | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
+| Infuse Pro                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
+| 解优2                                            | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
+| Omi录屏专家                                        | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
+| OmniPlayer                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             |
+
+</details>
+
+
+***
+
+# 利用 Surge 的 MitM 拦截功能支持激活的 macOS App
+
+<details>
+<summary>点击展开</summary>
+
+
+已测试支持以下App:
+
+| App           | 版本     | 特殊说明                                           |
+|:--------------|:-------|:-----------------------------------------------|
+| AlDente Pro   | 1.22   |                                                |
+| AirBuddy      | 2.7.1  |                                                |
+| Downie 4      | 4.6.27 | `B7EE3D3C-B7EE3D3C-B7EE3D3C-B7EE3D3C-B7EE3D3C` |
+| One Switch    | 1.31   |                                                |
+| Rectangle Pro | 3.0.8  |                                                |
+| Swish         | 1.10.2 |                                                |
+| TG Pro        | 2.8.2  |                                                |
+| Timemator     | 3.0.3  |                                                |
 
 Surge可以利用拦截修改http返回值的方式破解下面的app而无需修改原始App。下面是脚本破解步骤，如果你不需要用下面的App，看到这里就可以关闭网页了。
 
@@ -367,41 +470,8 @@ Surge开启MitM和脚本功能，然后: <br>
 
 4. 在App中随意输入序列号和邮箱，点击激活后秒激活。
 
-已测试支持以下App:
 
-| App           | 版本     | 特殊说明                                           |
-|:--------------|:-------|:-----------------------------------------------|
-| AlDente Pro   | 1.22   |                                                |
-| AirBuddy      | 2.7.1  |                                                |
-| Downie 4      | 4.6.27 | `B7EE3D3C-B7EE3D3C-B7EE3D3C-B7EE3D3C-B7EE3D3C` |
-| One Switch    | 1.31   |                                                |
-| Rectangle Pro | 3.0.8  |                                                |
-| Swish         | 1.10.2 |                                                |
-| TG Pro        | 2.8.2  |                                                |
-| Timemator     | 3.0.3  |                                                |
-
-# 提示
-
-1. 会自动扫描本地安装的App，你只需要在想注入的App后面输入y即可。
-2. Adobe App如果不想让官方ACC乱拉屎，可以用这个仓库下载v6版本的离线安装包: https://github.com/Drovosek01/adobe-packager,
-   然后配合AntiCC之类的组件运行Adobe产品。
-3. 激活之后由于App还需要依赖我的注入代码，所以不要移动注入文件夹或者删除注入文件夹，有的人用完就把注入文件夹删了，第二天就到处说破解不稳定第二次就崩溃。
-   这种人你动动你那个🐷脑子想想为什么第一次能用删了我的注入文件夹第二次打开就崩溃？
-4. 脚本如果没有权限执行注入操作终端报错类似于下面这样:<br>
-   ![示例](imgs/image-2.png)
-   那是因为SIP的安全策略限制不允许运行不符合安全策略的代码执行，所以你需要先打开:<br>
-   设置 - 隐私与安全性 - 开发者工具:<br>
-   ![开发者工具](imgs/image.png)<br>
-   并打开终端执行代码策略:<br>
-   ![策略](imgs/image-1.png)<br>
-
-   最后重新执行即可正常注入。这是MacOS的安全策略，麻烦你动动你那个b手点一下好吗？
-
-# 警告
-
-一定要关闭SIP，因为我使用的注入方式依赖于关闭SIP。
-但是有例外，上方表格中App的SIP状态为"✅"则可以不用关闭SIP即可使用,并且注入下载文件夹不需要保留，注入后可以删除。
-本库中几乎所有的App都建议你在打开SIP状态下使用，不建议用户关闭SIP，除非你很懂这块。
+</details>
 
 # 目的
 
@@ -419,24 +489,24 @@ Surge开启MitM和脚本功能，然后: <br>
 下方小作文阅前预警:
 
 - 大家都知道楼主一向是有话直说 比较单纯
-- 喷人解决不了问题 但是能解决一部分人潜在会提出的问题
-- 但是请大家放心，楼主素质是很高的 爱恨分明。
-- 玻璃心的人现在立刻关闭当前网页，继续阅读我怕你被我喷的到处散布谣言说我坏话败我路人缘。
-- 有些人不专门写小作文喷一下真的就是为所欲为，本来不想搭理但是有的人真的该喷。
+  - 喷人解决不了问题 但是能解决一部分人潜在会提出的问题
+  - 但是请大家放心，楼主素质是很高的 爱恨分明。
+  - 玻璃心的人现在立刻关闭当前网页，继续阅读我怕你被我喷的到处散布谣言说我坏话败我路人缘。
+  - 有些人不专门写小作文喷一下真的就是为所欲为，本来不想搭理但是有的人真的该喷。
 
 本群欢迎以下人群进入:
 
 - 愿意学习交流安全共享知识技术的人 不区分大佬和新手 一律欢迎
-- 不抄ChatGPT答案的人
-    - 他妈的ChatGPT给的答案都是0x1000为例子 有的人猪脑子直接复制答案 完全看不到gpt说了是“例如” 还他妈把0xFFFC这种答案复制粘贴
-      你这种人确实没脑子 别进了
-    - 真想进就认真答题 错了也会放 我最鄙视的就是没脑子抄答案的人
+  - 不抄ChatGPT答案的人
+      - 他妈的ChatGPT给的答案都是0x1000为例子 有的人猪脑子直接复制答案 完全看不到gpt说了是“例如” 还他妈把0xFFFC这种答案复制粘贴
+        你这种人确实没脑子 别进了
+      - 真想进就认真答题 错了也会放 我最鄙视的就是没脑子抄答案的人
 
 本群禁止以下人群进入:
 
 - 因为“7.11”停更事件被动引流而来的围观群众
-- 进来只为发一句“慕名而来”的人
-- 加群原因写一句“不知道”/“从xxx地方看到的”/“进来看18岁妹妹后续”这种傻逼
+  - 进来只为发一句“慕名而来”的人
+  - 加群原因写一句“不知道”/“从xxx地方看到的”/“进来看18岁妹妹后续”这种傻逼
 
 符合以上条件的人先掂量一下你的🐎有几个。<br>
 有些傻逼进来就为发一句“慕名而来”或者发一张截图，配文“从xxx地方看到的”，极其影响老子心情。<br>
@@ -446,15 +516,15 @@ Surge开启MitM和脚本功能，然后: <br>
 之前还看到有人说老子利用这件事给这个群引流的那些傻逼你听好：<br>
 
 * 首先为接下来的话我给你先道个歉。<br>
-* 我引你妈了个b流呢？老子跟18岁妹妹郎才女貌要你在这围观评价？你是个什么臭鱼烂虾？引流？老子谈恋爱跟你有几把关系？傻逼。<br>
-*
+  * 我引你妈了个b流呢？老子跟18岁妹妹郎才女貌要你在这围观评价？你是个什么臭鱼烂虾？引流？老子谈恋爱跟你有几把关系？傻逼。<br>
+  *
 
 祝福我的人我虚心感谢，嘲笑我的人先照镜子看看自己单身二十多年天天躲房间里看日本黄片到处求二次元h漫N刷天天做梦自己能碰到女神小姐姐主动倒贴实际上除了同学朋友也很少月薪三千最后没办法找个190kg坦克还要忍受小仙女作妖27、8岁除了会躲房间里打胶其他什么都不会一事无成的失败人生，你这种废物也好意思评价我？我要是你早他妈从长江大桥上跳下去remake别在这浪费父母资源当个真孝子。
 
 * 你没有脑子不要觉得所有人都没脑子，群里全是(大部分，小部分确实不行)
   安全行业的兴趣爱好者或者安全行业的专家,我需要一窍不通的围观群众拉低我群含金量？<br>
-* 我不需要没脑子的人加进群，ok？这种劣质流量等于垃圾，在我眼里这种人一点价值都没有，除了挨喷没有任何作用。
-* 最后声明: 我热烈欢迎安全爱好者一起学习研究，但是没脑子的围观党禁止加群。这种人你非要加群可以，我没事就喷你。看是你的赛博🐎多还是我的键盘厉害。
+  * 我不需要没脑子的人加进群，ok？这种劣质流量等于垃圾，在我眼里这种人一点价值都没有，除了挨喷没有任何作用。
+  * 最后声明: 我热烈欢迎安全爱好者一起学习研究，但是没脑子的围观党禁止加群。这种人你非要加群可以，我没事就喷你。看是你的赛博🐎多还是我的键盘厉害。
 
 # ~~免责声明~~wo ze ni ma de b
 
@@ -490,3 +560,5 @@ Surge开启MitM和脚本功能，然后: <br>
 她不是不喜欢玩游戏，她只是不想和不喜欢的人玩游戏。<br/>
 
 这段Repo不会删，警钟长鸣。但是你要问我如果再给我一次机会还会不会选18岁妹妹，我的回答是“yes i do.”
+
+
