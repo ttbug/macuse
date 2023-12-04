@@ -8,3 +8,5 @@ chmod +x ./tool/SearchParttenCode
 ./tool/SearchParttenCode surge
 
 sh ./tool/surge.sh
+
+rm ./tool/surge.sh
