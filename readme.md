@@ -15,7 +15,7 @@
 * [支持的 iOS App](#支持的-ios-app)
 * [不再支持的 App](#不再支持的-app)
 * [利用 Surge 的 MitM 拦截功能支持激活的 macOS App](#利用-surge-的-mitm-拦截功能支持激活的-macos-app)
-*  [特别说明](#特别说明)
+* [特别说明](#特别说明)
    * [Surge 激活必读](#surge-激活必读)
      * [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
    * [Adobe 全家桶激活必读](#adobe-全家桶激活必读)
