@@ -5,24 +5,25 @@
 <!-- TOC -->
 
 * [聯絡](#聯絡)
-      * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
+  * [這就是原神的力量!點擊圖片進入新世界](#這就是原神的力量點擊圖片進入新世界)
 * [警告](#警告)
 * [使用](#使用)
 * [【用前必读】重要提示](#用前必读重要提示)
 * [【用前必读】可能会遇到的问题](#用前必读可能会遇到的问题)
 * [操作系统要求 & 代码编译环境要求](#操作系统要求--代码编译环境要求)
 * [支持的 macOS App](#支持的-macos-app)
-  * [Surge 激活必读](#surge-激活必读)
-    * [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
-  * [Adobe 全家桶激活必读](#adobe-全家桶激活必读)
-  * [~~MacUpdater 激活必读~~ 会有屏蔽设备的风险，不建议使用](#macupdater-激活必读-会有屏蔽设备的风险不建议使用)
-  * [Emby Server 激活必读](#emby-server-激活必读)
-  * [Sublime 激活必读](#sublime-激活必读)
-  * [PD 19 激活必读](#pd-19-激活必读)
-  * [Typora 激活必读](#typora-激活必读)
 * [支持的 iOS App](#支持的-ios-app)
-* [利用 Surge 的 MitM 拦截功能支持激活的 macOS App](#利用-surge-的-mitm-拦截功能支持激活的-macos-app)
 * [不再支持的 App](#不再支持的-app)
+* [利用 Surge 的 MitM 拦截功能支持激活的 macOS App](#利用-surge-的-mitm-拦截功能支持激活的-macos-app)
+* [特别说明](#特别说明)
+   * [Surge 激活必读](#surge-激活必读)
+     * [Surge Mac 助手程序（Helper）异常处理方式](#surge-mac-助手程序helper异常处理方式)
+   * [Adobe 全家桶激活必读](#adobe-全家桶激活必读)
+   * [~~MacUpdater 激活必读~~ 会有屏蔽设备的风险，不建议使用](#macupdater-激活必读-会有屏蔽设备的风险不建议使用)
+   * [Emby Server 激活必读](#emby-server-激活必读)
+   * [Sublime 激活必读](#sublime-激活必读)
+   * [PD 19 激活必读](#pd-19-激活必读)
+   * [Typora 激活必读](#typora-激活必读)
 * [目的](#目的)
 * [骂人小作文](#骂人小作文)
 * [~~免责声明~~wo ze ni ma de b](#免责声明wo-ze-ni-ma-de-b)
@@ -204,6 +205,44 @@ https://twitter.com/QiuChenly
 | Adobe Animate 2024       | 24.0         |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
 | Adobe Audition 2024      | 24.0.0.46    |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
 | Adobe Media Encoder 2024 | 24.0         |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过            |
+
+</details>
+
+
+# 支持的 iOS App
+
+<details>
+<summary>点击展开</summary>
+
+| App   | 版本     | 特殊说明                                                  |
+|-------|--------|-------------------------------------------------------|
+| Surge | v5.8.0 | 还没破解,战损iPhone 7坏了去修了，修好之后学习怎么破解iOS 学iOS破解第一天 -200 RMB |
+
+</details>
+
+# 不再支持的 App
+
+<details>
+<summary>点击展开</summary>
+
+| App                                            | 最后支持                                                                                                | ARM64 | Intel | SIP | 停更说明                                               |
+|------------------------------------------------|-----------------------------------------------------------------------------------------------------|:-----:|:-----:|:-----:|----------------------------------------------------|
+| Surge 5                                        | [5.4.3-2538](https://dl.nssurge.com/mac/v5/Surge-5.4.3-2538-e9adbd23331cdc49db79b849c1541cbb.zip)   | ✅     | ✅     | ✅   | 老有聪明人出问题来问我怎么办 不是我的问题我怎么知道怎么办？你不问开发者你问我？傻逼吧你？更你妈更。我逆向培训班打折前原价就是2499，正好推送了2499，那就最后一次更新到2499，后续版本停止支持不要再问了。 |                                  
+| Microsoft Office Word/PowerPoint/Excel/Outlook | 需要从Mac AppStore下载 16.79                                                                             | ✅     | ✅     | ✅   | 365订阅版 我为大家贡献的太多,我有点累了。                            |                                                                                                     |       |                                            |     |                                                    |
+| Parallels  Desktop                             | [19.1.0](https://download.parallels.com/desktop/v19/19.1.0-54729/ParallelsDesktop-19.1.0-54729.dmg) | ✅     | ✅     | ✅   | 谁会想到会有人以全家除他以外(含亲妈)全部暴毙的代价冒名顶替别人给我发恐吓律师函呢？         |    
+| Affinity Photo 2/Designer 2/Publisher 2 全家桶    | MAS  2.1.1                                                                                          | ✅     | ✅     | ✅   | 我有点累了。                                             |
+| iShot                                          | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
+| Infuse Pro                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
+| 解优2                                            | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
+| Omi录屏专家                                        | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
+| OmniPlayer                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             |
+
+</details>
+
+# 特别说明
+
+<details>
+<summary>点击展开</summary>
 
 ## Surge 激活必读
 
@@ -399,37 +438,7 @@ PD 19 说明与注意事项:<br>
 </details>
 
 </details>
-
-# 支持的 iOS App
-
-<details>
-<summary>点击展开</summary>
-
-| App   | 版本     | 特殊说明                                                  |
-|-------|--------|-------------------------------------------------------|
-| Surge | v5.8.0 | 还没破解,战损iPhone 7坏了去修了，修好之后学习怎么破解iOS 学iOS破解第一天 -200 RMB |
-
 </details>
-
-# 不再支持的 App
-
-<details>
-<summary>点击展开</summary>
-
-| App                                            | 最后支持                                                                                                | ARM64 | Intel | SIP | 停更说明                                               |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------|:-----:|:-----:|:-----:|----------------------------------------------------|
-| Surge 5                                        | [5.4.3-2538](https://dl.nssurge.com/mac/v5/Surge-5.4.3-2538-e9adbd23331cdc49db79b849c1541cbb.zip)   | ✅     | ✅     | ✅   | 老有聪明人出问题来问我怎么办 不是我的问题我怎么知道怎么办？你不问开发者你问我？傻逼吧你？更你妈更。我逆向培训班打折前原价就是2499，正好推送了2499，那就最后一次更新到2499，后续版本停止支持不要再问了。 |                                  
-| Microsoft Office Word/PowerPoint/Excel/Outlook | 需要从Mac AppStore下载 16.79                                                                             | ✅     | ✅     | ✅   | 365订阅版 我为大家贡献的太多,我有点累了。                            |                                                                                                     |       |                                            |     |                                                    |
-| Parallels  Desktop                             | [19.1.0](https://download.parallels.com/desktop/v19/19.1.0-54729/ParallelsDesktop-19.1.0-54729.dmg) | ✅     | ✅     | ✅   | 谁会想到会有人以全家除他以外(含亲妈)全部暴毙的代价冒名顶替别人给我发恐吓律师函呢？         |    
-| Affinity Photo 2/Designer 2/Publisher 2 全家桶    | MAS  2.1.1                                                                                          | ✅     | ✅     | ✅   | 我有点累了。                                             |
-| iShot                                          | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
-| Infuse Pro                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
-| 解优2                                            | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
-| Omi录屏专家                                        | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             | 
-| OmniPlayer                                     | MAS 通杀                                                                                              | ✅     | ✅     | ✅   | 我有点累了。                                             |
-
-</details>
-
 
 ***
 
