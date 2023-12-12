@@ -30,6 +30,18 @@
       "extraShell": "surgeAgent.sh"
     },
     {
+      "packageName": ["com.edrawsoft.edrawmax", "com.edrawsoft.mindmaster"],
+      "injectFile": "QtXml.framework/Versions/5/QtXml",
+      "needCopyToAppDir": true,
+      "deepSignApp": true
+    },
+    {
+      "packageName": "pl.maketheweb.cleanshotx",
+      "injectFile": "InsiderKit.framework/Versions/A/InsiderKit",
+      "needCopyToAppDir": true,
+      "deepSignApp": true
+    },
+    {
       "packageName": "com.parallels.desktop.console",
       "bridgeFile": "/Contents/MacOS/Parallels Service.app/Contents/MacOS/",
       "injectFile": "prl_disp_service",
