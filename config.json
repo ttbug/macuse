@@ -159,11 +159,8 @@
       "injectFile": "JSONModel.framework/Versions/A/JSONModel"
     },
     {
-      "packageName": [
-        "com.navicat.NavicatPremium",
-        "com.navicat.NavicatForOracle"
-      ],
-      "injectFile": "NAVTabBarView.framework/Versions/A/NAVTabBarView"
+      "packageName":  "com.navicat.NavicatPremium",
+      "injectFile": "EE.framework/Versions/A/EE"
     },
     {
       "packageName": "com.adobe.Photoshop",
@@ -337,8 +334,7 @@
       "needCopyToAppDir": true,
       "deepSignApp": true,
       "bridgeFile": "/Contents/MacOS/",
-      "injectFile": "Bandizip365",
-      "supportVersion": ["7.27", "7.28"]
+      "injectFile": "Bandizip365"
     },
     {
       "packageName": "com.proxyman.NSProxy",
